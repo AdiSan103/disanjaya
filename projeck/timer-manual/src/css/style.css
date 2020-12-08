@@ -1,0 +1,19 @@
+.start {
+  cursor: pointer;
+}
+
+.start.mulai:hover {
+  color: yellow;
+}
+
+.start.load {
+  color: red;
+}
+
+.reset {
+  display: none;
+}
+.reset:hover {
+  color: green;
+  cursor: pointer;
+}

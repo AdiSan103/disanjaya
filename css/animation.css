@@ -1,0 +1,60 @@
+/* ini berisi semua animasi pada website */
+/* animasi bergerak pada web */
+
+/* keyframes */
+@keyframes cloud {
+  0% {
+    transform: translateY(50px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(50px);
+  }
+}
+@keyframes sea {
+  0% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes ball {
+  0% {
+    transform: translateX(100px);
+  }
+  25% {
+    transform: translateX(-100px);
+    background-color: #80f6f9;
+  }
+  50% {
+    transform: translateX(100px);
+  }
+  75% {
+    transform: translateX(-100px);
+    background-color: #fc70a2;
+  }
+  100% {
+    transform: translateX(100px);
+  }
+}
+@keyframes ballBoard {
+  0% {
+  }
+  25% {
+    border: 4px solid #80f6f9;
+  }
+  50% {
+  }
+  75% {
+    border: 4px solid #fc70a2;
+  }
+  100% {
+  }
+}

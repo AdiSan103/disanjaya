@@ -1,0 +1,305 @@
+/*untuk imgContent1, font-size, footer, dan content 1 -> style.css*/
+
+/*content1*/
+.container {
+	background-image: url(../img/background1.jpg);
+}
+
+/*content header*/
+.content1 {
+	color: white;
+}
+
+/*content1 headerContent*/
+.headerContent1 {
+	padding-top: 100px;
+}
+
+.headerContent1 h3 {
+	margin: 20px 0;
+}
+
+.headerContent2 {
+	width: 70%;
+}
+
+.headerContent1,
+.headerContent2 {
+	transform: translate(0, -50px);
+	opacity: 0;
+	transition: 1.5s;
+}
+
+.headerContent1.headerCMuncul,
+.headerContent2.headerCMuncul {
+	opacity: 1;
+	transform: translate(0, 0);
+}
+
+/*keunggulan*/
+.keunggulan {
+	/*untuk menghilangkan, menggunakan landing element*/
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-gap: 20px;
+	margin: 200px 20px;
+}
+
+/*keunggulan card*/
+.card1,
+.card2,
+.card3 {
+	/*menyembunyikan*/
+	opacity: 0;
+	/*transform: translate(0, -100px);*/
+	text-align: center;
+	border: 1px solid #e1e1e1;
+	background-color: white;
+	padding: 20px;
+	margin: 12px 15px;
+	transition: 1.1s;
+	transform: translate(0, -100px);
+}
+
+.card1.cardMuncul,
+.card2.cardMuncul,
+.card3.cardMuncul {
+	/*mengembalikan nilai*/
+	transform: translate(0, 0);
+	opacity: 1;
+}
+
+/*keunggulan gambar*/
+.keunggulan img {
+	width: 55%;
+	margin-bottom: 20px;
+	min-width: 120px;
+}
+
+.keunggulan h4 {
+	margin: 20px 0 30px 0;
+}
+
+.keunggulan p {
+	color: #474747;
+	margin: 2px;
+}
+
+/*informasi*/
+.informasi {
+	border: 1px solid #e1e1e1;
+	display: grid;
+	grid-template-areas:
+		'info1 info2';
+	grid-gap: 20px;
+	background-color: white;
+	padding: 20px;
+}
+
+.informasi .info1 {
+	grid-area: info1;
+}
+
+.informasi .info1 p {
+	border: 1px solid #e1e1e1;
+	margin: 15px;
+	padding: 10px;
+	transition: 0.25s;
+}
+
+.informasi .info2 img {
+	grid-area: info2;
+	width: 80%;
+	min-width: 300px;
+}
+
+.informasi .info1 .infoP {
+	opacity: 0;
+	transform: translate(0, -50px);
+	transition: 1s;
+}
+
+.informasi .info1 .infoP.pMuncul {
+	opacity: 1;
+	transform: translate(0, 0);
+}
+
+
+/*CaraKerja*/
+.doWork {
+	margin: 200px auto 50px;
+}
+
+.doWork>* {
+	border: 1px solid #e1e1e1;
+	margin: 20px 15px;
+	padding: 10px;
+	background-color: white;
+}
+
+.doWork .doWorkP {
+	opacity: 0;
+	transform: translate(0, -50px);
+	transition: 1s;
+}
+
+.doWork .doWorkP.doWorkPMuncul {
+	opacity: 1;
+	transform: translate(0, 0);
+}
+
+.doWork h3 {
+	text-align: center;
+	margin: 0 auto 50px;
+	width: 70%;
+}
+
+/*caraKerja tombolPomodoroPage*/
+.buttonPage {
+	background-color: #7631ff;
+	width: 300px;
+	border-radius: 20px;
+	padding: 30px;
+	margin: 0 auto;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+	transition: 0.25s;
+	text-align: center;
+}
+
+.buttonPage a {
+	text-decoration: none;
+	color: white;
+}
+
+
+/*animation*/
+
+/*keunggulan*/
+.card1:hover,
+.card2:hover,
+.card3:hover {
+	box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.3);
+	transform: scale(1.05);
+	transition: 0.25s;
+}
+
+/*informasi*/
+#informasi .info1 p:hover {
+	box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.3);
+	transform: scale(1.05);
+	transition: 0.25s;
+}
+
+/*caraKerja*/
+#doWork p.doWorkP:hover {
+	box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.3);
+	transform: scale(1.02);
+	transition: 0.25s;
+}
+
+/*butttonPage*/
+.buttonPage:hover {
+	transform: scale(1.02);
+	background-color: #441d94;
+}
+
+
+/*responsive*/
+
+/*layar hd*/
+@media (max-width: 1024px) {
+
+	/*content1 header*/
+	.content1 .headerContent2 {
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	.content1 .headerContent1 {
+		text-align: center;
+	}
+
+	.content1 .headerContent2 p {
+		margin-top: 80px;
+		font-size: 1.2em;
+		color: black;
+	}
+
+	/*informasi*/
+	.informasi {
+		grid-template-areas:
+			'info2'
+			'info1';
+	}
+
+	.informasi .info2 {
+		text-align: center;
+	}
+
+	.informasi .info2 img {
+		width: 55%;
+	}
+
+	.content1 .img1 {
+		max-width: 400px;
+	}
+
+	/*content1*/
+	.headerContent2 {
+		width: auto;
+	}
+}
+
+/*tablet*/
+@media (max-width: 768px) {
+
+	/*content1 headerContent*/
+	.content1 .headerContent2 p {
+		margin-top: 250px;
+	}
+
+	/*informasi*/
+	.informasi .info2 {
+		margin: 0 auto;
+	}
+}
+
+/*handphone*/
+@media (max-width: 600px) {
+
+	/*keunggulan*/
+	.keunggulan img {
+		min-width: 100px;
+		width: 20%;
+	}
+
+	.keunggulan {
+		/*untuk menghilangkan, menggunakan landing element*/
+		margin: 200px 0;
+	}
+
+	.card1,
+	.card2,
+	.card3 {
+		padding: 5px 1px;
+		margin: 15px auto;
+		max-width: 200px;
+	}
+
+	/*content1 headerContetnt2*/
+	.content1 .headerContent2 p {
+		margin-top: 10px;
+		font-size: 1.2em;
+		color: white;
+	}
+
+	/*buttonPage*/
+	.buttonPage {
+		width: 150px;
+	}
+
+	/*info2 img*/
+	.informasi .info2 img {
+		min-width: 200px;
+	}
+}

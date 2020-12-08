@@ -1,0 +1,38 @@
+/*untuk imgContent1, font-size, footer, dan content 1 -> style.css*/
+/*.pContent*/
+.pContent {
+	opacity: 0;
+	transform: translate(0,-50px);
+	transition: 1.5s;
+}
+.pContent.movePContent {
+	opacity: 1;
+	transform: translate(0,0);
+}
+/*content1*/
+.container{
+	background-image: url(../img/background3.jpg);
+}
+.headerContent1 h1 {
+ 	color: white;
+ 	margin-bottom: 25%;
+}
+.headerContent2 h3 {
+	margin: 10px 0;
+}
+
+/*content1 headerContent*/
+.content1 .headerContent1 {
+	margin-top: 10%;
+}
+
+/*responsive*/
+@media ( max-width: 1024px) {
+	.headerContent1 h1, .headerContent1 h3 {
+	 	margin-bottom: 20px;
+	 	color: white;
+	}
+	.content1 .headerContent2 p {
+		margin: 10px 0;
+	}
+}

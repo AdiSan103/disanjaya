@@ -1,0 +1,157 @@
+/*content 1 dan footer -> style css*/
+
+/*content1*/
+/*content1 header*/
+.container{
+	background-image: url(../img/background2.jpg);
+}
+
+/*css*/
+* {
+	text-align: center;
+}
+/*.pContent*/
+.pContent {
+	opacity: 0;
+	transform: translate(0,-50px);
+	transition: 1.5s;
+}
+.pContent.movePContent {
+	opacity: 1;
+	transform: translate(0,0);
+}
+
+/*title of Pomodoro*/
+h1 {
+	margin: 60px auto 50px;
+	background-color: #7630fe;
+	padding: 20px 50px;
+	color: white;
+	box-shadow: 0px 2px 4px 1px rgba(0,0,0,0.2);
+	width:50%;
+	border-radius: 20px;
+	display: grid;
+	justify-content: center;
+}
+
+/*timer*/
+.timer {
+	font-weight: bold;
+	margin: 50px auto;
+	padding: 20px 30px;
+	border: 2px solid #ebebeb;
+	box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.2);
+	background-color: white;
+	width: 20%;
+	min-width: 500px;
+}
+
+.timer > * {
+	font-size: 6em;
+	display: inline-block;
+}
+
+/*berhenti*/
+.berhenti {
+	font-size: 2em;
+	margin:  5px auto;
+	background-color: red;
+	width: 300px;
+	padding: 10px 15px;
+	transition: 0.25s;
+	cursor: pointer;
+	box-shadow: 0px 2px 3px 1px rgba(0,0,0,0.2);
+	font-weight: bold;
+	border-radius: 20px;
+	color: white;
+}
+
+/*opsi2*/
+.opsi2 {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	margin: 50px auto;
+	gap: 10px;
+	justify-content: space-around;
+	font-size: 1.2em;
+	color: white;
+	font-weight: bold;
+}
+
+.opsi21, .opsi22, .opsi23 {
+	cursor: pointer;
+	transition: 0.25s;
+	padding: 40px 0px;
+	box-shadow: 0px 1px 5px 1px rgba(0,0,0,0.2);
+	margin: 15px 10px;
+}
+
+.opsi21 {
+	background-color:#ffd016;
+}
+
+.opsi22 {
+	background-color: #01ff79;
+}
+
+.opsi23 {
+	background-color: #f95cff;
+}
+/*pengingat*/
+.pengingat1 p {
+	background-color: #ddd;
+	font-weight: bold;
+	padding: 2px;
+}
+.pengingat1 {
+	background-color: #eee;
+	padding-bottom: 10px;
+	box-shadow: 0px 1px 5px 1px rgba(0,0,0,0.2);
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+/*audio*/
+audio {
+	display: none;
+}
+
+/*animation*/
+.opsi21:hover , .opsi22:hover , .opsi23:hover {
+	background-color:#431a91;
+	transform: scale(1.1);
+	box-shadow: 0px 4px 9px 2px rgba(0,0,0,0.3);
+}
+.berhenti:hover {
+	background-color: darkred;
+	transform: scale(1.05);
+}
+.pengingat1 li a:hover {
+	color: black;
+}
+
+/*responsive*/
+@media ( max-width: 1024px ) {
+	.opsi2 {
+		font-size: 1em;
+	}
+}
+
+@media ( max-width: 768px ) {
+	.timer > * {
+		font-size: 3.5em;
+		display: inline-block;
+	}
+	.timer {
+		min-width: 200px;
+	}
+	/*berhenti*/
+	.berhenti {
+		font-size: 1.4em;
+		width: 150px;
+	}
+	/*h1*/
+	.container h1 {
+		font-size: 1.3em;
+	}
+}

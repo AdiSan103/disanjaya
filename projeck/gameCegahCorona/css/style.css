@@ -1,0 +1,401 @@
+/* font */
+@font-face {
+    font-family: "kaushan_scriptregular";
+    src: url('../font/kaushanscript-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* body */
+
+body {
+    font-size: 18px;
+    font-family: Helvetica, sans-serif;
+    background-image: linear-gradient(#f6e58d, #ee9f0c);
+    overflow-x: hidden;
+}
+
+/* judul */
+h1 {
+    font-family: "kaushan_scriptregular";
+    padding-top: 100px;
+    font-size: 4em;
+    text-align: center;
+    color: white;
+    text-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* option-function */
+.option-function {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.option-function a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+    text-align: center;
+    background-image: linear-gradient(#20bf6b, #26de81);
+    padding: 10px;
+    width: 100px;
+    cursor: pointer;
+    box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.option-function a:hover {
+    background-image: linear-gradient(#1a643d, #278b59);
+}
+
+/* prosedur */
+.option-function .prosedur {
+    width: 200px;
+    display: inline-block;
+    background-image: linear-gradient(#d63d3d, #b33939);
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.option-function .prosedur:hover {
+    background-image: linear-gradient(#a03434, #a33636);
+}
+
+/* untuk seluruh bagian start-play didalamnya */
+.start-play>* {
+    display: inline-block;
+    margin: -5px;
+    font-weight: bold;
+    padding: 0 50px;
+    box-shadow: 0px 10px 10px 1px rgba(0, 0, 0, 0.2);
+    height: 100px;
+}
+
+/* start-play */
+.start-play {
+    width: 100%;
+    margin: -35px -10px;
+    position: fixed;
+    text-align: center;
+    color: white;
+}
+
+/* time-play */
+.time-play {
+    background-image: linear-gradient(rgb(255, 0, 0), rgb(177, 29, 29));
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.time-play .timer,
+.skor .table-skor {
+    font-size: 2.3em;
+    margin-top: -15px;
+}
+
+/* skor */
+.skor {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-image: linear-gradient(#4834d4, #583ff5);
+}
+
+/* pop-up */
+.pop-up {
+    display: none;
+    margin: -35px -10px;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    transition: 0.5s;
+}
+
+.pop-up .pop-start {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    background-image: linear-gradient(#218c74, #33d9b2);
+    box-shadow: 0px 10px 10px 1px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    margin: 100px auto;
+}
+
+.pop-up .pop-start .close {
+    font-size: 0.5em;
+    float: right;
+    margin-top: -20px;
+    background-color: red;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.pop-up .pop-start .close:hover {
+    background-color: rgb(172, 16, 16);
+}
+
+.pop-up .pop-start .skor-end {
+    font-size: 2em;
+    font-family: "kaushan_scriptregular";
+    text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+.pop-up .pop-start .pText {
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+/* pop-up muncul */
+.pop-up.muncul {
+    display: block;
+}
+
+/*#container */
+#container {
+    margin: 50px;
+    display: grid;
+    grid-template-areas:
+        'atas1 atas2 atas3'
+        'bawah1 bawah2 bawah3';
+    grid-template-rows: 150px 300px;
+    grid-template-columns: auto 100px;
+    place-items: center;
+    gap: 10px;
+    cursor: url(../img/foto8.png), auto;
+}
+
+#container:active {
+    cursor: url(../img/foto9.png), auto;
+}
+
+/* box */
+.box .img img {
+    width: 100px;
+    margin-top: 100px;
+}
+
+/* posisi awal muncul virus/mask/child */
+.box .option {
+    margin: 150px 0 0 50px;
+}
+
+.box {
+    width: 200px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.box::after {
+    content: '';
+    display: block;
+    width: 200px;
+    height: 110px;
+    background: url(../img/foto1.png) bottom center no-repeat;
+    background-size: 50%;
+    position: absolute;
+    bottom: -10px;
+}
+
+
+/* option virus , child, mask*/
+.option.virus,
+.option.child,
+.option.mask {
+    margin: 100px 0 0 50px;
+    width: 50%;
+    height: 110px;
+    position: absolute;
+    background-size: 100%;
+    transition: 0.3s;
+}
+
+.virus {
+    background: url(../img/foto4.png) bottom center no-repeat;
+}
+
+.mask {
+    background: url(../img/foto3.png) bottom center no-repeat;
+}
+
+.child {
+    background: url(../img/foto2.png) bottom center no-repeat;
+}
+
+/* text*/
+.text {
+    margin: 10px -15px -10px;
+    padding-bottom: 100px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.9em;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.text p {
+    display: inline-block;
+}
+
+.text a {
+    font-size: 1.1em;
+    text-shadow: 0px 0px 1px black;
+    color: salmon;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.text a:hover {
+    font-size: 1.2em;
+    color: #fffb02;
+    text-shadow: 0px 0px 3px black;
+}
+
+/* beberapa untuk caraBermain.html */
+.container2 {
+    padding: 10px;
+    margin-top: -100px;
+}
+
+ul li {
+    list-style: none;
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+
+ul li:hover {
+    transform: scale(1.05);
+}
+
+/* responsive */
+@media(max-width:700px) {
+    #container {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 140px));
+        place-items: center;
+    }
+
+    .box {
+        width: 150px;
+    }
+}
+
+@media(max-width:470px) {
+    h1 {
+        padding-left: 0;
+        padding-right: 0;
+        font-size: 2.3em;
+    }
+
+    .start-play>* {
+        width: 46%;
+        margin: -5px;
+        padding: 0 10px;
+    }
+
+    .box {
+        height: 200px;
+    }
+
+    /* posisi awal muncul virus/mask/child */
+    .box .option {
+        margin: 20px 0 0 50px;
+    }
+
+    .option.virus,
+    .option.child,
+    .option.mask {
+        margin: 0px 0 0 50px;
+    }
+
+    #container {
+        /* margin-top: -100px;
+        margin-bottom: 0; */
+        margin: -100px 10px 0 10px;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 101px));
+    }
+
+    .option-function {
+        margin-top: -10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width:366px) {
+
+    .time-play .timer,
+    .skor .table-skor {
+        font-size: 1.5em;
+        margin-top: -15px;
+    }
+
+    .option-function .prosedur {
+        width: 50%;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .box {
+        height: 200px;
+    }
+
+    /* posisi awal muncul virus/mask/child */
+    .box .option {
+        margin: 150px 10px 10px 10px;
+    }
+
+    /* posisi awal muncul virus/mask/child */
+
+    .option.virus,
+    .option.child,
+    .option.mask {
+        margin: 0px 0 0 30px;
+    }
+
+    #container {
+        /* margin-top: -100px;
+        margin-bottom: 0; */
+        margin: -100px 0 0 0;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 110px));
+        gap: 0;
+        align-items: center;
+    }
+
+    .box {
+        width: 110px;
+    }
+
+    .box::after {
+        content: '';
+        width: 110px;
+    }
+
+    /* caraBermain.html */
+    .container2 {
+        padding: 0;
+        margin: 0;
+    }
+
+    ul {
+        padding: 5px;
+    }
+
+    ul li {
+        width: auto;
+        min-width: 200px;
+        font-size: 0.8em;
+    }
+}
