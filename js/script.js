@@ -23,9 +23,6 @@ function whenButtonScrollUp() {
 function projekPart() {
     // projek
     if(thisScroll > $('#projek').offset().top - 200) {
-        // projek-navbar
-        $('nav .option-navbar a').removeClass('true');
-        $('nav .option-navbar a.projek').addClass('true');
         // projek-box
         $('.container-item .box').each(function (i) {
             setTimeout(function () {
@@ -41,9 +38,6 @@ function projekPart() {
 function tentangKamiPart() {
     // tentangKami
     if(thisScroll > $('#tentangKami').offset().top - 200) {
-        // tentang kami-navbar
-        $('nav .option-navbar a').removeClass('true');
-        $('nav .option-navbar a.tentangKami').addClass('true');
         // desk-left-img
         setTimeout(function() {
             $('.desk-left img').addClass('again');
@@ -59,7 +53,7 @@ function tentangKamiPart() {
         setTimeout(function() {
             $('.desk-right h5.true.again').addClass('again1');
         }, 600)
-    }  
+    }
 }
 
 function hamburgerMenuPart() {
@@ -86,8 +80,20 @@ function navBerandaHubKamiPart() {
         $('nav .option-navbar a').removeClass('true');
         $('nav .option-navbar a.beranda').addClass('true');
     }
+    // tentangKami
+    if(thisScroll > $('#tentangKami').offset().top - 200) {
+        // tentang kami-navbar
+        $('nav .option-navbar a').removeClass('true');
+        $('nav .option-navbar a.tentangKami').addClass('true');
+    }
+
+    if(thisScroll > $('#projek').offset().top - 200) {
+        // projek-navbar
+        $('nav .option-navbar a').removeClass('true');
+        $('nav .option-navbar a.projek').addClass('true');
+    }
      // hubungi kami-navbar
-    if(thisScroll > $('#hubungiKami').offset().top - 400) {
+     if(thisScroll > $('#hubungiKami').offset().top - 100) {
         $('nav .option-navbar a').removeClass('true');
         $('nav .option-navbar a.hubungiKami').addClass('true');
     } 
