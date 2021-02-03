@@ -93,7 +93,7 @@ function navBerandaHubKamiPart() {
         $('nav .option-navbar a.projek').addClass('true');
     }
      // hubungi kami-navbar
-     if(thisScroll > $('#hubungiKami').offset().top - 100) {
+     if(thisScroll > $('#hubungiKami').offset().top - 400) {
         $('nav .option-navbar a').removeClass('true');
         $('nav .option-navbar a.hubungiKami').addClass('true');
     } 
