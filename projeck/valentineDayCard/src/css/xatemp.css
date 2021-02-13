@@ -29,6 +29,8 @@
 body.body {
   display: flex;
   justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
 }
 .container {
   /* before load */
@@ -46,6 +48,7 @@ body.body {
   box-sizing: border-box;
   border-radius: 50px;
   position: relative;
+  box-sizing: border-box;
 }
 
 .container.true {
@@ -136,14 +139,15 @@ body.body {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  box-sizing: border-box;
 }
 .leaf .left,
 .leaf .right {
   width: 50%;
   margin: 0 50px;
-  display: flex;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
 }
 
 .leaf-left:nth-child(1) {
@@ -443,7 +447,7 @@ section.content4 {
 
 @media (max-width: 600px) {
   .container {
-    max-width: 400px;
+    max-width: 500px !important;
     margin: 10px auto;
   }
   h1.content2 {
@@ -452,27 +456,36 @@ section.content4 {
   .leaf-left:nth-child(1) {
     width: 80px;
     height: 180px;
+    margin-left: -20px;
   }
   .leaf-left:nth-child(2) {
     width: 80px;
     height: 180px;
+    margin-left: -20px;
   }
   .left .flower-left {
     width: 100px;
     height: 130px;
+    margin-left: -20px;
   }
   /* right */
   .leaf-right:nth-child(1) {
     width: 80px;
     height: 180px;
+    margin: 0;
+    margin-right: 100px;
   }
   .leaf-right:nth-child(2) {
     width: 80px;
     height: 180px;
+    margin: 0;
+    margin-right: 100px;
   }
   .right .flower-right {
     width: 80px;
     height: 130px;
+    margin: 0;
+    margin-right: 100px;
   }
   .leaf7 {
     width: 200px;
@@ -491,7 +504,7 @@ section.content4 {
 
 @media (max-width: 400px) {
   .container {
-    max-width: 350px;
+    max-width: 300px !important;
     margin: 0 auto;
   }
   h1.content2 {
