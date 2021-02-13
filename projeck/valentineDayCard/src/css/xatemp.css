@@ -47,6 +47,7 @@ body.body {
   border-radius: 50px;
   position: relative;
 }
+
 .container.true {
   /* after load */
   opacity: 1 !important;
@@ -433,6 +434,18 @@ section.content4 {
 .text a:hover {
   color: rgb(221, 146, 33);
   text-decoration: none;
+}
+
+/* responsive  */
+
+@media (max-width: 500px) {
+  .container {
+    max-width: 400px;
+    margin: 10px;
+  }
+  h1.content2 {
+    font-size: 35px;
+  }
 }
 
 /* animation */
