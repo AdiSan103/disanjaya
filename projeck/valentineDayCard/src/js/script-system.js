@@ -61,7 +61,7 @@ if(document.getElementsByClassName('salin')[0]) {
 // 2.1s
 function baseUrl() {
     let urlBase = document.getElementById('baseUrl');
-    urlBase.value = 'https://adisan103.github.io/projeck/xatemp.html?' + getDataUrl;
+    urlBase.value = 'https://adisan103.github.io/disanjaya/projeck/valentineDayCard/xatemp.html?' + getDataUrl;
     copyUrl();
 }
 // 2.2
