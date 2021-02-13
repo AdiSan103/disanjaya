@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine Day Card</title>
+    <!-- font -->
+    <link rel="stylesheet" href="src/css/font.css">
+    <!-- css reset from main website -->
+    <link rel="stylesheet" href="src/css/reset.css">
+    <!-- my css -->
+    <link rel="stylesheet" href="src/css/style.css">
+    
+</head>
+<body>
+    <h1>Buat Kartu Ucapan Valentine kepada orang terkasih!</h1>
+    <div class="container">
+        <!-- form input -->
+        <form class="form" action="/projeck/valentineDayCard/xatemp.html">
+            <!-- receiver -->
+            <label for="HJkaL">Kepada : </label>
+            <input type="text" name="HJkaL" id="HJkaL">
+            <!-- message -->
+            <label for="MGJiK">Pesan : </label>
+            <textarea name="MGJiK" id="MGJiK" cols="30" rows="10"></textarea>
+            <!-- sender -->
+            <label for="LpOUI">Pengirim : </label>
+            <input type="text" name="LpOUI" id="LpOUI">
+            <!-- submit -->
+            <button type="submit" id="submit" class="submit">Lihat Hasil</button>
+            <!-- copy -->
+            <p class="copy">Salin Link dan bagikan kepada orang terkasih</p>
+            <!-- url -->
+            <input type="text" name="baseUrl" id="baseUrl" class="hidden">
+            <!-- <a class="copy">Salin Link</a> -->
+        </form>
+        <!-- form copy -->
+        <form class="form" action="/projeck/valentineDayCard/index.html">
+            <!-- receiver -->
+            <input type="text" name="HJkaL" class="receiverCopy hidden" style="margin-top:20px"  >
+            <!-- message -->
+            <input type="text" name="MGJiK" class="messageCopy hidden"  >
+            <!-- sender -->
+            <input type="text" name="LpOUI" class="senderCopy hidden"  >
+            <!-- submit -->
+            <button type="submit" id="copy" class="copy">Buat Link</button>
+        </form>
+    </div>
+    <!-- footer -->
+    <footer>
+        <div class="text">
+            <p>Created by <a href="../../index.html">Disanjaya</a></p>
+        </div>
+    </footer>
+    <!-- javascript -->
+    <script src="src/js/script-system.js"></script>
+</body>
+</html>

@@ -1,0 +1,634 @@
+/* for xatemp.html */
+/* load */
+.load {
+  height: 100vh;
+  background-color: white;
+  position: absolute;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  text-align: center;
+}
+.load.false {
+  display: none;
+}
+
+.load h2 {
+  opacity: 0;
+  animation: loadText 5s infinite;
+}
+
+.load h2.text.true {
+  font-size: 40px;
+  color: rgb(150, 49, 79);
+  font-family: "art_valentine";
+}
+/* body */
+body.body {
+  display: flex;
+  justify-content: center;
+}
+.container {
+  /* before load */
+  opacity: 0;
+
+  transition: 2s;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-height: 0px;
+  max-width: 500px;
+  box-shadow: 0px 0px 10px 0px rgba(250, 114, 193, 0.3);
+  margin: 50px;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 50px;
+  position: relative;
+}
+.container.true {
+  /* after load */
+  opacity: 1 !important;
+  max-height: 1000px !important;
+}
+/* for xamtemp.html */
+
+/* plus component */
+.cp1.true {
+  position: absolute;
+  background-image: url("../img/heart-collection/Asset\ 1.svg");
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  bottom: 0;
+  animation: top 10s infinite;
+  opacity: 0;
+}
+.cp2.true {
+  position: absolute;
+  background-image: url("../img/heart-collection/Asset\ 2.svg");
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  bottom: 0;
+  left: 0;
+  animation: top 8s infinite;
+  opacity: 0;
+}
+.cp3.true {
+  position: absolute;
+  background-image: url("../img/heart-collection/Asset\ 3.svg");
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  bottom: 0;
+  right: 0;
+  animation: top 5s infinite;
+  opacity: 0;
+}
+.cp4.true {
+  position: absolute;
+  background-image: url("../img/heart-collection/Asset\ 6.svg");
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  bottom: 0;
+  left: 25%;
+  animation: top 12s infinite;
+  opacity: 0;
+}
+.cp5.true {
+  position: absolute;
+  background-image: url("../img/heart-collection/Asset\ 5.svg");
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  bottom: 0;
+  right: 25%;
+  animation: top 7s infinite;
+  opacity: 0;
+}
+.butterfly.true {
+  position: absolute;
+  background-image: url("../img/component-pink/Asset\ 20.svg");
+  width: 80px;
+  height: 80px;
+  background-repeat: no-repeat;
+  right: 0;
+  top: 60vh;
+  animation: fly1 10s infinite;
+}
+.bee.true {
+  position: absolute;
+  background-image: url("../img/component-pink/Asset\ 14.svg");
+  width: 80px;
+  height: 80px;
+  background-repeat: no-repeat;
+  left: 0;
+  transform: rotateY(180deg);
+  top: 80vh;
+  animation: fly2 8s infinite;
+}
+/* component */
+.leaf {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.leaf .left,
+.leaf .right {
+  width: 50%;
+  margin: 0 50px;
+}
+
+.leaf-left:nth-child(1) {
+  background-image: url("../img/component-pink/Asset\ 22.svg");
+  width: 90px;
+  height: 220px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -2;
+  margin-top: -50px;
+  transition: 2s;
+  opacity: 0;
+}
+.leaf-left.true:nth-child(1) {
+  opacity: 1;
+  animation: leaf-left1 10s infinite;
+  transform: rotate(90deg);
+}
+.leaf-left:nth-child(2) {
+  background-image: url("../img/component-pink/Asset\ 22.svg");
+  width: 100px;
+  height: 220px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -2;
+  position: absolute;
+  top: 0;
+  margin-top: 10px;
+  margin-left: -20px;
+  opacity: 0;
+  transition: 2s;
+}
+.leaf-left.true:nth-child(2) {
+  opacity: 1;
+  animation: leaf-left2 15s infinite;
+  transform: rotate(120deg);
+}
+.left .flower-left {
+  background-image: url("../img/component-pink/Asset\ 6.svg");
+  width: 130px;
+  height: 180px;
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  margin-top: -20px;
+  margin-left: -20px;
+  opacity: 0;
+  transition: 2s;
+}
+.left .flower-left.true {
+  animation: flower-left 10s infinite;
+  opacity: 1;
+  transform: rotate(90deg);
+}
+
+/* right */
+.leaf-right:nth-child(1) {
+  background-image: url("../img/component-pink/Asset\ 22.svg");
+  width: 90px;
+  height: 220px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: rotate(220deg);
+  z-index: -2;
+  margin-left: 20px;
+  margin-top: -30px;
+  opacity: 0;
+  transition: 2s;
+}
+.leaf-right:nth-child(1).true {
+  opacity: 1;
+  animation: leaf-right1 10s infinite;
+}
+.leaf-right:nth-child(2) {
+  background-image: url("../img/component-pink/Asset\ 22.svg");
+  width: 100px;
+  height: 220px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: rotate(250deg);
+  z-index: -2;
+  top: 0;
+  position: absolute;
+  margin-top: -50px;
+  opacity: 0;
+  transition: 2s;
+}
+.leaf-right:nth-child(2).true {
+  opacity: 1;
+  animation: leaf-right2 10s infinite;
+}
+.right .flower-right {
+  background-image: url("../img/component-pink/Asset\ 7.svg");
+  width: 130px;
+  height: 230px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: rotate(-140deg);
+  position: absolute;
+  top: 0;
+  margin-top: -10px;
+  opacity: 0;
+  transition: 2s;
+}
+.right .flower-right.true {
+  opacity: 1;
+  animation: flower-right 10s infinite;
+}
+
+/* content2 */
+section.content2 {
+  background-image: url("../img/heart.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+  z-index: -4;
+  margin-top: -50px;
+  max-width: 290px;
+  opacity: 0;
+  transition: 2s;
+}
+section.content2.true {
+  opacity: 1;
+  animation: heart 15s infinite;
+}
+h1.content2 {
+  font-family: "brannboll_stencil";
+  font-size: 55px;
+  animation: h1Content2 5s infinite;
+  color: rgb(172, 21, 59);
+}
+h3.content2 {
+  font-family: "montserratlight";
+  font-size: 15px;
+}
+.receiverData {
+  font-family: "bakso_sapiregular";
+  font-size: 25px;
+}
+/* content3 */
+section.content3 {
+  margin-top: 50px;
+  text-align: center;
+  margin-bottom: 10px;
+  opacity: 0;
+  transition: 2s;
+}
+section.content3.true {
+  opacity: 1;
+}
+img.img-pink-asset1 {
+  margin: 10px 0;
+  width: 100%;
+  animation: tape 10s infinite;
+}
+.messageData {
+  font-family: "winter_memoregular";
+  font-size: 20px;
+  max-width: 500px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+h4.content3 {
+  font-family: "montserratlight";
+  font-size: 15px;
+}
+/* content4 */
+section.content4 {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  box-sizing: border-box;
+  height: 100px;
+  opacity: 0;
+  transition: 2s;
+}
+.content4.true {
+  opacity: 1;
+}
+.leaf1 {
+  background-image: url("../img/component-pink/Asset\ 19.svg");
+  background-repeat: no-repeat;
+  width: 850px;
+  height: 300px;
+  transform: rotate(30deg);
+  margin-left: -10px;
+  background-position: bottom;
+  animation: leaf1 10s infinite;
+}
+.leaf2 {
+  background-image: url("../img/component-pink/Asset\ 18.svg");
+  background-repeat: no-repeat;
+  width: 650px;
+  height: 300px;
+  margin-left: -30px;
+  background-position: bottom;
+  animation: leaf2 10s infinite;
+}
+
+.leaf3 {
+  background-image: url("../img/component-pink/Asset\ 16.svg");
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 300px;
+  margin-right: 10px;
+  background-position: bottom;
+  animation: leaf3 2s infinite;
+}
+.leaf3-1 {
+  background-image: url("../img/component-pink/Asset\ 2.svg");
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 300px;
+  background-position: bottom;
+  animation: leaf3-1 2s infinite;
+}
+.leaf4 {
+  background-image: url("../img/component-pink/Asset\ 21.svg");
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 200px;
+  background-position: bottom;
+  animation: leaf4 10s infinite;
+}
+.leaf5 {
+  background-image: url("../img/component-pink/Asset\ 9.svg");
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 200px;
+  background-position: bottom;
+  animation: leaf5 10s infinite;
+}
+.leaf6 {
+  background-image: url("../img/component-pink/Asset\ 5.svg");
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 200px;
+  margin-right: 80px;
+  background-position: bottom;
+  animation: leaf6 10s infinite;
+}
+.leaf7 {
+  background-image: url("../img/component-pink/Asset\ 10.svg");
+  background-repeat: no-repeat;
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  right: -60px;
+  transform: rotate(-20deg);
+  background-position: bottom;
+  animation: leaf7 10s infinite;
+}
+.leaf8 {
+  background-image: url("../img/component-pink/Asset\ 12.svg");
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  right: -120px;
+  background-position: bottom;
+  animation: leaf8 10s infinite;
+}
+
+/* footer */
+.text {
+  margin-top: 20px;
+  font-family: "montserratmedium";
+  color: #747474;
+}
+.text a {
+  color: rgb(49, 218, 161);
+  text-decoration: none;
+  transition: 0.25s;
+}
+.text a:hover {
+  color: rgb(221, 146, 33);
+  text-decoration: none;
+}
+
+/* animation */
+
+/* load */
+
+@keyframes loadText {
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+/* plus  component */
+@keyframes top {
+  10% {
+    transform: rotate(5deg);
+    opacity: 0.2;
+  }
+  20% {
+    transform: rotate(-5deg) translateY(-20vh);
+    opacity: 0.4;
+  }
+  30% {
+    transform: rotate(5deg) translateY(-40vh);
+    opacity: 0.6;
+  }
+  40% {
+    transform: rotate(-5deg) translateY(-80vh);
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-100vh) scale(1.5) rotate(5deg);
+  }
+  55% {
+    opacity: 0;
+  }
+}
+@keyframes fly1 {
+  10% {
+    transform: translate(-100px, 50px) rotateX(100deg);
+  }
+  20% {
+    transform: translateX(-150px);
+  }
+  30% {
+    transform: translate(-200px, 100px) rotateX(100deg);
+  }
+  40% {
+    transform: translateX(-250px);
+  }
+  50% {
+    transform: translateX(-300px) rotateY(180deg);
+  }
+  60% {
+    transform: translateX(-250px) rotateY(180deg) rotateX(100deg);
+  }
+  70% {
+    transform: translate(-150px, -100px) rotateY(180deg);
+  }
+  80% {
+    transform: translateX(-100px) rotateY(180deg) rotateX(100deg);
+  }
+  90% {
+    transform: translate(-50px, -50px) rotateY(180deg);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fly2 {
+  40% {
+    transform: translate(50px, -100px);
+  }
+  80% {
+    transform: translate(10px, -200px);
+  }
+}
+
+/* content1 */
+/* leaf-left */
+@keyframes leaf-left1 {
+  50% {
+    transform: rotate(100deg);
+  }
+}
+
+@keyframes leaf-left2 {
+  50% {
+    transform: rotate(110deg);
+  }
+}
+
+@keyframes flower-left {
+  50% {
+    transform: rotate(100deg);
+  }
+}
+
+/* leaf-right */
+@keyframes leaf-right1 {
+  50% {
+    transform: rotate(225deg);
+  }
+}
+
+@keyframes leaf-right2 {
+  50% {
+    transform: rotate(230deg);
+  }
+}
+
+@keyframes flower-right {
+  50% {
+    transform: rotate(-130deg);
+  }
+}
+
+/* content2 */
+@keyframes h1Content2 {
+  20% {
+    color: rgb(182, 37, 93);
+  }
+  40% {
+    color: rgb(216, 55, 117);
+  }
+  60% {
+    color: rgb(248, 128, 184);
+  }
+  80% {
+    color: rgb(216, 55, 117);
+  }
+}
+@keyframes heart {
+  25% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  75% {
+    transform: scale(1.2);
+  }
+}
+
+/* content3 */
+@keyframes tape {
+  50% {
+    transform: scale(0.95);
+  }
+}
+
+/* content4 */
+@keyframes leaf1 {
+  50% {
+    transform: rotate(2deg);
+  }
+}
+@keyframes leaf2 {
+  50% {
+    transform: rotate(6deg);
+  }
+}
+@keyframes leaf3 {
+  50% {
+    transform: translateY(-20px) scale(1.1);
+  }
+}
+@keyframes leaf3-1 {
+  50% {
+    transform: translateY(5px);
+  }
+}
+@keyframes leaf4 {
+  50% {
+    transform: rotate(-4deg) scale(1.1) translateY(-10px);
+  }
+}
+@keyframes leaf5 {
+  50% {
+    transform: rotate(5deg) scale(1.1) translateY(-10px);
+  }
+}
+@keyframes leaf6 {
+  50% {
+    transform: rotate(-10deg) scale(1.1) translateY(-10px);
+  }
+}
+@keyframes leaf7 {
+  50% {
+    transform: rotate(2deg);
+  }
+}
+@keyframes leaf8 {
+  50% {
+    transform: rotate(-10deg);
+  }
+}
