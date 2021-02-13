@@ -43,16 +43,9 @@ if(receiverUrl === null && senderUrl === null) {
     if(receiverUrl || senderUrl) {        
         if(messageUrl) {
             // back page
-                if(receiverUrl == "false" && senderUrl == "false") {        
-                    // if(messageUrl == "false") {
-                    //     copy.classList.remove('salin');
-                    //     window.location.href = 'http://127.0.0.1:5500/projeck/valentineDayCard/';
-                    // }
-                } else {
                     if(copy) {
                         copy.innerHTML = "Salin link";
                         copy.classList.add('salin');
-                    }
                 }
         }
     }
@@ -77,11 +70,11 @@ function copyUrl() {
     let urlBase = document.getElementById('baseUrl');
     urlBase.select();
     document.execCommand("copy");
-    alert("Text berhasil dicopy");
-    let receiverCopy = document.getElementsByClassName('receiverCopy')[0];
-    let messageCopy = document.getElementsByClassName('messageCopy')[0];
-    let senderCopy = document.getElementsByClassName('senderCopy')[0];
-    // post data to url
+    alert("link berhasil dicopy");
+    // let receiverCopy = document.getElementsByClassName('receiverCopy')[0];
+    // let messageCopy = document.getElementsByClassName('messageCopy')[0];
+    // let senderCopy = document.getElementsByClassName('senderCopy')[0];
+    // // post data to url
     // receiverCopy.value = 'false';
     // messageCopy.value = 'false';
     // senderCopy.value = 'false';
