@@ -441,7 +441,7 @@ section.content4 {
 @media (max-width: 500px) {
   .container {
     max-width: 400px;
-    margin: 10px;
+    margin: 10px auto;
   }
   h1.content2 {
     font-size: 35px;
