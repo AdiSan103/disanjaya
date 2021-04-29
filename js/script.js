@@ -1,151 +1,184 @@
-//variabel public-start
-// mendapatkan jarak scroll
+// 1.public variabel
 let thisScroll;
-//console.log(thisScroll);
-// variabel public-end
 
-
-function whenButtonScrollUp() {
-    // buttonUp
-    // vanila-js start 
-    let buttonScrollUp = document.getElementsByClassName("scrollTop")[0];
-    let imgButtonScrollUp = document.getElementsByClassName("imgButtonScrollUp")[0];
-    buttonScrollUp.addEventListener('click', function() {
-        location.href = "#beranda";
-        imgButtonScrollUp.classList.add('true');
-        setTimeout(function() {
-            imgButtonScrollUp.classList.remove('true');
-        }, 1000)
-    })
-    // vanila-js end
+// 2.loading
+function Loading() {
+  document.querySelector(".loading").style.display = "none";
+  document.querySelector(".home").style.display = "block";
+  document.querySelector(".home").classList.add("afterLoading");
+  document.querySelector("body .afterLoading").style.display = "block";
 }
 
-function projekPart() {
-    // projek
-    if(thisScroll > $('#projek').offset().top - 200) {
-        // projek-box
-        $('.container-item .box').each(function (i) {
-            setTimeout(function () {
-                $('.container-item .box').eq(i).addClass('true');
-                setTimeout(function(){
-                    $('.container-item .box').eq(i).addClass('again');
-                }, ( i * 500));
-            }, ( i * 200));
-        });
-    };
-}
-
-function tentangKamiPart() {
-    // tentangKami
-    if(thisScroll > $('#tentangKami').offset().top - 200) {
-        // desk-left-img
-        setTimeout(function() {
-            $('.desk-left img').addClass('again');
-        }, 500)
-        $('.desk-left img').addClass('true');
-        // desk-right
-        $('.desk-right h3').addClass('true');
-        $('.desk-right h4').addClass('true');
-        $('.desk-right h5').addClass('true');
-        setTimeout(function() {
-            $('.desk-right h5.true').addClass('again');
-        }, 400)
-        setTimeout(function() {
-            $('.desk-right h5.true.again').addClass('again1');
-        }, 600)
-    }
-}
-
+// 3.navbar
 function hamburgerMenuPart() {
-    // hamburger-menu start
-    // vanila-js start
-        let hamburgerMenu = document.getElementsByClassName("hamburger-menu")[0];
-        let optionNavbar = document.getElementsByClassName("option-navbar")[0];
-        hamburgerMenu.addEventListener("click", function(){
-        if(hamburgerMenu.classList == "hamburger-menu true") {
-            hamburgerMenu.classList.remove("true");
-            optionNavbar.classList.remove("true");
-        } else {
-            hamburgerMenu.classList.add("true");
-            optionNavbar.classList.add("true");
-        }
-        // vanila-js end
+  let hamburgerMenu = document.querySelector(".menu");
+  let ContainerHamburgerMenu = document.querySelector(".hamburger-menu");
+  let hamburgerMenu1 = document.querySelectorAll(".item-hamburger-menu");
+  let hamburgerMenu2 = document.querySelector(".item-hamburger-menu-2");
+  // hover
+  ContainerHamburgerMenu.addEventListener("mouseover", function () {
+    if (hamburgerMenu.classList != "menu true") {
+      hamburgerMenu1[0].classList.add("hover");
+      hamburgerMenu1[1].classList.add("hover");
+      hamburgerMenu2.classList.add("hover");
+    }
+  });
+  ContainerHamburgerMenu.addEventListener("mouseout", function () {
+    hamburgerMenu1[0].classList.remove("hover");
+    hamburgerMenu1[1].classList.remove("hover");
+    hamburgerMenu2.classList.remove("hover");
+  });
+
+  // click
+  ContainerHamburgerMenu.addEventListener("click", function () {
+    if (hamburgerMenu.classList == "menu true") {
+      hamburgerMenu.classList.remove("true");
+      hamburgerMenu1[0].classList.remove("true");
+      hamburgerMenu1[1].classList.remove("true");
+      hamburgerMenu2.classList.remove("true");
+    } else {
+      hamburgerMenu.classList.add("true");
+      hamburgerMenu1[0].classList.add("true");
+      hamburgerMenu1[1].classList.add("true");
+      hamburgerMenu2.classList.add("true");
+      hamburgerMenu1[0].classList.remove("hover");
+      hamburgerMenu1[1].classList.remove("hover");
+      hamburgerMenu2.classList.remove("hover");
+    }
+  });
+
+  // a.home hover
+  let home = document.querySelector("a.home");
+  let borderHome = document.querySelector(".menu .borderHome");
+  home.addEventListener("mouseover", function () {
+    borderHome.classList.add("true");
+  });
+  home.addEventListener("mouseout", function () {
+    borderHome.classList.remove("true");
+  });
+
+  // b.project hover
+  let project = document.querySelector("a.project");
+  let borderProject = document.querySelector(".menu .borderProject");
+  project.addEventListener("mouseover", function () {
+    borderProject.classList.add("true");
+  });
+  project.addEventListener("mouseout", function () {
+    borderProject.classList.remove("true");
+  });
+
+  // c.aboutMe hover
+  let aboutMe = document.querySelector("a.aboutMe");
+  let borderAboutMe = document.querySelector(".menu .borderAboutMe");
+  aboutMe.addEventListener("mouseover", function () {
+    borderAboutMe.classList.add("true");
+  });
+  aboutMe.addEventListener("mouseout", function () {
+    borderAboutMe.classList.remove("true");
+  });
+
+  // c.contactMe hover
+  let contactMe = document.querySelector("a.contactMe");
+  let borderContactMe = document.querySelector(".menu .borderContactMe");
+  contactMe.addEventListener("mouseover", function () {
+    borderContactMe.classList.add("true");
+  });
+  contactMe.addEventListener("mouseout", function () {
+    borderContactMe.classList.remove("true");
+  });
+}
+
+// 4. banner-title first reaction-gsap
+function bannerTitle() {
+  gsap.to("h1 span.text", { duration: 3, text: "Disanjaya" });
+}
+
+// 5. content1-jquery
+function content1() {
+  if (thisScroll > $(".content1").offset().top - 150) {
+    // console.log(thisScroll + " dan " + $(".content1").offset().top);
+    $(".imgSvg1").addClass("noHidden");
+    $(".content1 .content1-right h3").addClass("noHidden");
+    // gsap
+    gsap.to(".content1 .content1-right h4", {
+      duration: 2,
+      text: ' "a coffee and Many briliant Ideas" ',
     });
-    // hamburger-menu end
+  }
 }
 
-function navBerandaHubKamiPart() {
-    // beranda-navbar
-    if(thisScroll > $('#beranda').offset().top ) {
-        $('nav .option-navbar a').removeClass('true');
-        $('nav .option-navbar a.beranda').addClass('true');
-    }
-    // tentangKami
-    if(thisScroll > $('#tentangKami').offset().top - 200) {
-        // tentang kami-navbar
-        $('nav .option-navbar a').removeClass('true');
-        $('nav .option-navbar a.tentangKami').addClass('true');
-    }
-
-    if(thisScroll > $('#projek').offset().top - 200) {
-        // projek-navbar
-        $('nav .option-navbar a').removeClass('true');
-        $('nav .option-navbar a.projek').addClass('true');
-    }
-     // hubungi kami-navbar
-     if(thisScroll > $('#hubungiKami').offset().top - 400) {
-        $('nav .option-navbar a').removeClass('true');
-        $('nav .option-navbar a.hubungiKami').addClass('true');
-    } 
+// 6.projectList-jquery
+function projectList() {
+  if (thisScroll > $(".projectList").offset().top - 200) {
+    $(".projectList h2").addClass("noHidden");
+    $(".project .card").each(function (i) {
+      setTimeout(function () {
+        $(".project .card").eq(i).addClass("noHidden");
+        setTimeout(function () {
+          $(".project .card").eq(i).addClass("again");
+        }, i * 500);
+      }, i * 200);
+    });
+  }
 }
 
-function afterScroll() {
-    // scrollTop
-    $('.scrollTop').addClass('true');
-    // loading
-    $('body.loading1').removeClass('loading1');
-    $('.loading').css("display", "none");
-    $('.logo.loading2').removeClass('loading2');
-    $('.item1.loading2').removeClass('loading2');
-    $('.item2.loading2').removeClass('loading2');
-    $('.item3.loading2').removeClass('loading2');
-    // logo
-    $('.logo img').addClass('true');
-    // banner right img
-    // 1. ketika loading
-    $('.banner-right img.image-1').addClass('true');
-    setTimeout(function() {
-        $('.banner-right img.image-1.true').addClass('again');
-    }, 500)
-    // banner left
-    $('.banner-left').addClass('true');
+// 7.content2-jquery
+function content2() {
+  if (thisScroll > $(".content2").offset().top - 150) {
+    $(".content2-left").addClass("noHidden");
+  }
 }
 
+// 8.content3-jquery
+function content3() {
+  if (thisScroll > $(".content3").offset().top - 150) {
+    $(".content3 .content3-title h2").addClass("noHidden");
+    setTimeout(function () {
+      $(".content3 .content3-title h4").addClass("noHidden");
+    }, 500);
+    $(".content3-card .card").each(function (i) {
+      setTimeout(function () {
+        $(".content3-card .card").eq(i).addClass("noHidden");
+      }, i * 200);
+    });
+  }
+}
 
+// 9.content4-jquery
+function content4() {
+  if (thisScroll > $(".content4").offset().top - 150) {
+    $(".content4-left-top").addClass("noHidden");
+    setTimeout(function () {
+      $(".content4-left-bottom").addClass("noHidden");
+    }, 500);
+  }
+}
 
-// inti dari logika projek
+// ############################################################################
+
+// main logic
 // loading
-$(window).on('load', function() {
-    // penerapan asynchronous
-    // koding akan di eksekusi setelah 3 detik
-    setTimeout(function() {
-        // memanggil
-        whenButtonScrollUp();
-        // beberapa bagian berubah
-        afterScroll();
-        // aksi pada hamburger menu
-        hamburgerMenuPart();
-        // parallax start
-        // ketika di scroll atau pada ketinggian dari layar website  tertentu ( untuk animasi -> parallax)
-        $(window).scroll(function() {
-            thisScroll = $(this).scrollTop();
-            // beranda-navbar-part
-            navBerandaHubKamiPart();
-            // projek-part
-            projekPart();
-            // tentang-kami-part
-            tentangKamiPart();
-        })
-    }, 3000)
-})
-
+$(window).on("load", function () {
+  // loading
+  setTimeout(function () {
+    // laading
+    Loading();
+    // banner-title
+    bannerTitle();
+    // aksi pada hamburger menu
+    hamburgerMenuPart();
+    $(window).scroll(function () {
+      thisScroll = $(this).scrollTop();
+      // content1
+      content1();
+      // projectList
+      projectList();
+      // content2
+      content2();
+      // content3
+      content3();
+      // content4
+      content4();
+    });
+  }, 1500);
+});

@@ -1,60 +1,496 @@
-/* ini berisi semua animasi pada website */
-/* animasi bergerak pada web */
+/* logo-loading */
+.logo1 {
+  animation: logo1 1.5s;
+}
 
-/* keyframes */
-@keyframes cloud {
+@keyframes logo1 {
   0% {
-    transform: translateY(50px);
+    opacity: 0;
   }
   50% {
-    transform: translateY(-20px);
+    transform: translateY(-8px);
   }
-  100% {
-    transform: translateY(50px);
+  70% {
+    transform: translateY(20px);
+  }
+  80% {
+    transform: translateY(-10px);
+  }
+  90% {
+    transform: translateY(0);
+    opacity: 1;
+    animation-play-state: paused;
   }
 }
-@keyframes sea {
+
+/* nav*/
+nav .hamburger-menu .item-hamburger-menu:nth-child(1).hover {
+  animation: navHamburgerMenu 1.5s infinite;
+}
+nav .hamburger-menu .item-hamburger-menu-2.hover {
+  animation: navHamburgerMenu 2s infinite;
+}
+nav .hamburger-menu .item-hamburger-menu:nth-child(3).hover {
+  animation: navHamburgerMenu 3s infinite;
+}
+
+@keyframes navHamburgerMenu {
   0% {
-    transform: translateY(-20px);
+    width: 40%;
+    margin-left: 60%;
   }
+  25% {
+    width: 100%;
+    margin-left: 0%;
+  }
+  50% {
+    width: 70%;
+    margin-left: 30%;
+  }
+  100% {
+    width: 40%;
+    margin-left: 60%;
+  }
+}
+
+/* bganimation*/
+.bganimationUp1 {
+  animation: bganimationUp 15s infinite;
+}
+.bganimationUp2 {
+  animation: bganimationUp 9s infinite;
+}
+
+@keyframes bganimationUp {
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* banner-svg */
+.floatingUp {
+  animation: floatingUp 5s infinite;
+}
+
+@keyframes floatingUp {
   50% {
     transform: translateY(20px);
   }
-  100% {
+}
+
+.floatingDown {
+  animation: floatingDown 6s infinite;
+}
+
+@keyframes floatingDown {
+  50% {
     transform: translateY(-20px);
   }
 }
 
-@keyframes ball {
-  0% {
-    transform: translateX(100px);
-  }
-  25% {
-    transform: translateX(-100px);
-    background-color: #80f6f9;
-  }
+.pushToRight {
+  animation: pushToRight 8s infinite;
+}
+
+@keyframes pushToRight {
   50% {
-    transform: translateX(100px);
-  }
-  75% {
-    transform: translateX(-100px);
-    background-color: #fc70a2;
-  }
-  100% {
-    transform: translateX(100px);
+    transform: translateX(20px);
   }
 }
-@keyframes ballBoard {
+
+.svgUp1 {
+  animation: svgUp 1.5s infinite;
+}
+.svgUp2 {
+  animation: svgUp 3s infinite;
+}
+.svgUp3 {
+  animation: svgUp 5s infinite;
+}
+@keyframes svgUp {
   0% {
+    transform: 0;
+    opacity: 0;
   }
-  25% {
-    border: 4px solid #80f6f9;
+  40% {
+    opacity: 1;
   }
-  50% {
-  }
-  75% {
-    border: 4px solid #fc70a2;
+  60% {
+    transform: translateY(-20px);
   }
   100% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+}
+
+/* content1-svg-animateMessageIcon */
+.animateMessageIcon {
+  animation: animateMessageIcon 1.25s infinite;
+}
+
+@keyframes animateMessageIcon {
+  0% {
+    transform: translate(0);
+  }
+  60% {
+    transform: translate(6px, 6px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+/* content1-svg-Likes */
+.likes1 {
+  animation: likes 1.5s infinite;
+}
+.likes2 {
+  animation: likes 1.8s infinite;
+}
+
+@keyframes likes {
+  0% {
+    transform: 0;
+    opacity: 0;
+  }
+  90% {
+    transform: translateY(-40px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+}
+
+/* content1-svg-love */
+.loveRight {
+  animation: loveRight 2s infinite;
+}
+.loveLeft {
+  animation: loveLeft 1.75s infinite;
+}
+.loveZoom {
+  animation: loveZoom 1.5s infinite;
+}
+@keyframes loveRight {
+  0% {
+    transform: 0;
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  60% {
+    transform: translateY(-20px) rotate(-5deg);
+  }
+  100% {
+    transform: translateY(-20px) rotate(-5deg);
+    opacity: 0;
+  }
+}
+
+@keyframes loveLeft {
+  0% {
+    transform: 0;
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  60% {
+    transform: translateY(-60px) rotate(5deg);
+  }
+  100% {
+    transform: translateY(-60px) rotate(5deg);
+    opacity: 0;
+  }
+}
+
+@keyframes loveZoom {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  60% {
+    transform: scale(1.1) translate(60px, -30px) rotate(5deg);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.1) translate(60px, -30px) rotate(5deg);
+    opacity: 0;
+  }
+}
+
+/* content1-svg-message */
+.messageLeft {
+  animation: messageLeft 1.5s infinite;
+}
+.message2 {
+  animation: messageLeft 2s infinite;
+}
+
+@keyframes messageLeft {
+  0% {
+    transform: 0;
+  }
+  25% {
+    transform: rotate(-2deg);
+  }
+}
+
+/* content1-svg-leaf1 */
+.leaf1 {
+  animation: leaft 8s infinite;
+}
+.leaf2 {
+  animation: leaft 12s infinite;
+}
+@keyframes leaft {
+  0% {
+    transform: 0;
+    transform-origin: bottom;
+  }
+  50% {
+    transform: rotate(-10deg);
+    transform-origin: bottom;
+  }
+  75% {
+    transform: rotate(5deg);
+    transform-origin: bottom;
+  }
+  100% {
+    transform: 0;
+    transform-origin: bottom;
+  }
+}
+
+/* content1-svg-faceRotate */
+.faceRotate {
+  animation: faceRotate 15s infinite;
+}
+@keyframes faceRotate {
+  0% {
+    transform: 0;
+    transform-origin: bottom;
+  }
+  20% {
+    transform: rotate(-1.5deg);
+    transform-origin: bottom;
+  }
+  35% {
+    transform: rotate(0deg);
+    transform-origin: bottom;
+  }
+  50% {
+    transform: translateY(20px);
+    transform-origin: bottom;
+  }
+  70% {
+    transform: rotate(0deg);
+    transform-origin: bottom;
+  }
+  80% {
+    transform: rotate(0.5deg);
+    transform-origin: bottom;
+  }
+  100% {
+    transform: 0;
+    transform-origin: bottom;
+  }
+}
+
+/* content1-svg-right Hand */
+.rightHand {
+  animation: rightHand 6s infinite;
+}
+
+@keyframes rightHand {
+  50% {
+    transform: rotate(-0.5deg);
+  }
+}
+
+/* content2-box */
+.content2 .content2-right .box {
+  animation: boxFloating 10s infinite;
+}
+
+@keyframes boxFloating {
+  0% {
+    transform: translate(30px, 30px);
+  }
+  25% {
+    transform: translate(30px, -30px);
+  }
+  50% {
+    transform: translate(-20px, 30px);
+  }
+  75% {
+    transform: translate(-20px, -30px);
+  }
+  100% {
+    transform: translate(30px, 30px);
+  }
+}
+/*content3-card */
+.content3-card .card:hover {
+  animation: cardHover 2s infinite;
+}
+
+@keyframes cardHover {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.05);
+  }
+  50% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1.02);
+  }
+  70% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(1.09);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* content-3 img */
+.content3-card .card img {
+  animation: floating2 3.5s infinite;
+}
+
+@keyframes floating2 {
+  50% {
+    transform: translateY(5px);
+  }
+}
+
+/* content4-svg */
+.FalllingFromRight1 {
+  animation: FalllingFromRight 7s infinite;
+}
+.FalllingFromRight2 {
+  animation: FalllingFromRight 14s infinite;
+}
+.FalllingFromRight3 {
+  animation: FalllingFromRight 21s infinite;
+}
+@keyframes FalllingFromRight {
+  0% {
+    transform: rotate(5deg);
+    transform-origin: top;
+  }
+  50% {
+    transform: rotate(-5deg);
+    transform-origin: top;
+  }
+  100% {
+    transform: rotate(5deg);
+    transform-origin: top;
+  }
+}
+
+.FalllingFromLeft1 {
+  animation: FalllingFromLeft 7s infinite;
+}
+.FalllingFromLeft2 {
+  animation: FalllingFromLeft 14s infinite;
+}
+.FalllingFromLeft3 {
+  animation: FalllingFromLeft 21s infinite;
+}
+@keyframes FalllingFromLeft {
+  0% {
+    transform: rotate(-5deg);
+    transform-origin: top;
+  }
+  50% {
+    transform: rotate(5deg);
+    transform-origin: top;
+  }
+  100% {
+    transform: rotate(-5deg);
+    transform-origin: top;
+  }
+}
+
+.ballonFallingRight1 {
+  animation: ballonFallingRight 7s infinite;
+}
+.ballonFallingRight2 {
+  animation: ballonFallingRight 10s infinite;
+}
+.ballonFallingRight3 {
+  animation: ballonFallingRight 14s infinite;
+}
+@keyframes ballonFallingRight {
+  0% {
+    transform: rotate(-2deg);
+    transform-origin: bottom;
+  }
+  50% {
+    transform: rotate(2deg);
+    transform-origin: bottom;
+  }
+  100% {
+    transform: rotate(-2deg);
+    transform-origin: bottom;
+  }
+}
+
+/* for all animation, use with call the class */
+.fade1 {
+  animation: fade 1s infinite;
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.up1 {
+  animation: up 1s;
+}
+
+@keyframes up {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    animation-play-state: paused;
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.down1 {
+  animation: down 1s;
+}
+
+@keyframes down {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    animation-play-state: paused;
+    transform: translateY(0);
+    opacity: 1;
   }
 }

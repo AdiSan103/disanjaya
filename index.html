@@ -1,188 +1,2766 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DisanJaya</title>
-    <!-- source-code css start-->
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/font.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/animation.css">
-    <!-- source-code css end -->
-    <!-- favicon start-->
-    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="icon/apple-touch-icon-57x57.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="icon/apple-touch-icon-114x114.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="icon/apple-touch-icon-72x72.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="icon/apple-touch-icon-144x144.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="icon/apple-touch-icon-60x60.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="icon/apple-touch-icon-120x120.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="icon/apple-touch-icon-76x76.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="icon/apple-touch-icon-152x152.png" />
-    <link rel="icon" type="image/png" href="icon/favicon-196x196.png" sizes="196x196" />
-    <link rel="icon" type="image/png" href="icon/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/png" href="icon/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="icon/favicon-16x16.png" sizes="16x16" />
-    <link rel="icon" type="image/png" href="icon/favicon-128.png" sizes="128x128" />
+    <!-- css -->
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/font.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+    <link rel="stylesheet" href="/css/animation.css" />
+    <!-- favicon-->
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="57x57"
+      href="/favicon/apple-touch-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="114x114"
+      href="/favicon/apple-touch-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="72x72"
+      href="/favicon/apple-touch-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="144x144"
+      href="/favicon/apple-touch-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="60x60"
+      href="/favicon/apple-touch-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="120x120"
+      href="/favicon/apple-touch-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="76x76"
+      href="/favicon/apple-touch-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="152x152"
+      href="/favicon/apple-touch-icon-152x152.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/favicon/favicon-196x196.png"
+      sizes="196x196"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/favicon/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/favicon/favicon-16x16.png"
+      sizes="16x16"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/favicon/favicon-128.png"
+      sizes="128x128"
+    />
     <meta name="application-name" content="&nbsp;" />
     <meta name="msapplication-TileColor" content="#FFFFFF" />
     <meta name="msapplication-TileImage" content="icon/mstile-144x144.png" />
-    <meta name="msapplication-square70x70logo" content="icon/mstile-70x70.png" />
-    <meta name="msapplication-square150x150logo" content="icon/mstile-150x150.png" />
-    <meta name="msapplication-wide310x150logo" content="icon/mstile-310x150.png" />
-    <meta name="msapplication-square310x310logo" content="icon/mstile-310x310.png" />
+    <meta
+      name="msapplication-square70x70logo"
+      content="icon/mstile-70x70.png"
+    />
+    <meta
+      name="msapplication-square150x150logo"
+      content="icon/mstile-150x150.png"
+    />
+    <meta
+      name="msapplication-wide310x150logo"
+      content="icon/mstile-310x150.png"
+    />
+    <meta
+      name="msapplication-square310x310logo"
+      content="icon/mstile-310x310.png"
+    />
     <!-- faviocn end -->
-    
-</head>
-
-<body class="loading1">
-    <!-- button to stop scroll end -->
-    <!-- loading start -->
+  </head>
+  <body class="home">
+    <!-- loading-->
     <div class="loading">
-        <!-- ball1 start -->
-        <div class="ball1">
-            <div class="ball2">
-            </div>
-        </div>
-        <!-- ball1 end -->
+      <!-- cls-double -->
+      <svg
+        id="Layer_1"
+        data-name="Layer 1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 0 500 500"
+      >
+        <defs>
+          <style>
+            .cls-22 {
+              fill: url(#linear-gradient-2);
+            }
+            .cls-33 {
+              fill: url(#linear-gradient-3);
+            }
+            .cls-44 {
+              fill: url(#linear-gradient-4);
+            }
+            .cls-55 {
+              fill: url(#linear-gradient-5);
+            }
+            .cls-66 {
+              fill: url(#linear-gradient-6);
+            }
+          </style>
+          <linearGradient
+            id="linear-gradient"
+            x1="56.3"
+            y1="218.83"
+            x2="456.89"
+            y2="218.83"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop offset="0" stop-color="#fff" />
+            <stop offset="1" stop-color="#fff" />
+          </linearGradient>
+          <linearGradient
+            id="linear-gradient-2"
+            x1="145.49"
+            y1="208.65"
+            x2="239.48"
+            y2="208.65"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop offset="0" stop-color="#d0ffff" />
+            <stop offset="0.12" stop-color="#c7fbfd" />
+            <stop offset="0.31" stop-color="#adf1f9" />
+            <stop offset="0.56" stop-color="#84dff2" />
+            <stop offset="0.84" stop-color="#4bc8e8" />
+            <stop offset="1" stop-color="#29bae2" />
+          </linearGradient>
+          <linearGradient
+            id="linear-gradient-3"
+            x1="82.88"
+            y1="311.26"
+            x2="270.53"
+            y2="311.26"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop offset="0" stop-color="#d0ffff" />
+            <stop offset="0.11" stop-color="#c7f9fd" />
+            <stop offset="0.29" stop-color="#adeaf7" />
+            <stop offset="0.53" stop-color="#84d2ee" />
+            <stop offset="0.8" stop-color="#4bb0e1" />
+            <stop offset="1" stop-color="#1c94d6" />
+            <stop offset="1" stop-color="#0075be" />
+          </linearGradient>
+          <linearGradient
+            id="linear-gradient-4"
+            x1="159.18"
+            y1="206.31"
+            x2="408.75"
+            y2="206.31"
+            xlink:href="#linear-gradient-3"
+          />
+          <linearGradient
+            id="linear-gradient-5"
+            x1="76.22"
+            y1="275.96"
+            x2="441.83"
+            y2="275.96"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop offset="0" stop-color="#d0ffff" />
+            <stop offset="0.1" stop-color="#c7f9fc" />
+            <stop offset="0.26" stop-color="#ade8f4" />
+            <stop offset="0.47" stop-color="#84cce7" />
+            <stop offset="0.72" stop-color="#4aa6d5" />
+            <stop offset="1" stop-color="#0176be" />
+            <stop offset="1" stop-color="#0075be" />
+            <stop offset="1" stop-color="#1c94d6" />
+          </linearGradient>
+          <linearGradient
+            id="linear-gradient-6"
+            x1="119.21"
+            y1="106.32"
+            x2="192.78"
+            y2="106.32"
+            xlink:href="#linear-gradient-3"
+          />
+        </defs>
+        <path
+          class="cls-22 logo1"
+          d="M199.22,401.51H185.77a40.18,40.18,0,0,1-40.18-40.18c.94-167.62.78-240,0-253.58,0-.18,0-.46,0-.84,0,0-.15-3.2,0-6.53,1.35-23.21,14.73-49.29,14.73-49.29a164.17,164.17,0,0,1,24.49-35.31,158.38,158.38,0,0,0-4,87.13c12.52,51.77,47.79,80.61,58.66,88.83q0,84.8-.08,169.59A40.18,40.18,0,0,1,199.22,401.51Z"
+        />
+        <path
+          class="cls-33 logo1"
+          d="M122.17,401.29c-3.08,2.16-11.06,7.76-19.36,5.7-11.11-2.77-20-18.58-19.93-33,0,0,.07-32.37,63.21-70,3.34-2,5.81-3.5,10.75-6.55,3.64-2.24,8.19-5.13,13.73-8.82,0,0,22.21-12.54,54.67-39.3a38.25,38.25,0,0,0,10.82-13.09,39.21,39.21,0,0,0,3.42-21.07c2.14,1.56,34.49,26,30.75,62.07a61.75,61.75,0,0,1-12.53,30.75C192.4,353.06,143.34,386.49,122.17,401.29Z"
+        />
+        <path
+          class="cls-44 logo1"
+          d="M192.44,404.21l-.27-.42c-2-3-11.13-17.68-9.26-33.48,2-17.25,16.72-32.09,28.4-37.93l1-.48c25.44-12.16,135-41,130.89-68.64a16.63,16.63,0,0,0-.38-1.81c-8.51-32.47-63.57-42.77-113-75.49a250.14,250.14,0,0,1-44.53-37.89c-6.11-6.7-23.8-27.86-25.93-59.83-3.07-46.13,28.82-76.37,33.24-80.43-2.44,17.73-2.72,42.36,10.63,63.81,29.14,46.82,91.93,28.3,148.24,74.45,3.61,3,60.2,50.64,57.13,111.74-4,80.53-109.68,143.32-194.07,146.84A179.57,179.57,0,0,1,192.44,404.21Z"
+        />
+        <path
+          class="cls-55 logo1"
+          d="M92.05,415.94l-.45-.41c-3.23-3-18-17.68-15-33.49,3.3-17.25,27.05-32.09,46-37.92l1.6-.49c58.52-17,258.44-35.59,279.17-91.87,6.7-18.19-.2-54.27-93.73-129.62,20.29,10.3,132.4,69,132.21,147.4-.31,126-290.77,161.88-312.26,160.17C104.94,427.75,92.05,415.94,92.05,415.94Z"
+        />
+        <path
+          class="cls-66 logo1"
+          d="M147.8,163.84V203.7a89.23,89.23,0,0,1-21.07-29,107.68,107.68,0,0,1-7.41-45C120.91,96.22,146.61,50.2,192.78,9,178.4,27.87,156,63.15,148.93,112A215.52,215.52,0,0,0,147.8,163.84Z"
+        />
+      </svg>
     </div>
-    <!-- loading end -->
-    <!-- button to top scroll start-->
-    <div  class="scrollTop">
-        <img src="./img/buttonUp.png" alt="button-up" class="imgButtonScrollUp">
-    </div>
-    <!-- nav start-->
-    <nav>
-        <div class="logo loading2">
-            <img src="icon/logo.svg" alt="logo.png">
-        </div>
-        <div class="option-navbar">
-            <a class="beranda true" href="#beranda">Beranda</a>
-            <a href="#tentangKami" class="tentangKami">Tentang Kami</a>
-            <a href="#projek" class="projek">Projek</a>
-            <a href="#hubungiKami" class="hubungiKami">Hubungi Kami</a>
-        </div>
-        <div class="hamburger-menu">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
-    </nav>
-    <!-- nav end -->
-    <!-- banner start-->
-    <div class="banner" id="beranda">
-        <div class="banner-left">
-            <h2>Hi,</h2>
-            <h1>saya DisanJaya</h1>
-            <p>seorang Pelajar</p>
-        </div>
-        <div class="banner-right">
-            <img src="./img/image-1.svg" alt="image-1" class="image-1">
-            <img src="./img/item1.png" alt="item1" class="item1 loading2">
-            <img src="./img/item2.png" alt="item1" class="item2 loading2">
-            <img src="./img/item3.png" alt="item1" class="item3 loading2">
-        </div>
-    </div>
-    <div class="banner-bottom">
-    </div>
-    <!-- banner end -->
-    <!-- description start-->
-    <div class="description" id="tentangKami">
-        <div class="desk-left">
-            <img src="./img/image-2.svg" alt="image-2">
-        </div>
-        <div class="desk-right">
-            <h3>Portofolio projek-projek yang pernah dikembangkan oleh pengembang website hingga saat ini</h3>
-            <h4>Projek ini dapat digunakan dan dimanfaatkan secara umum</h4>
-            <h5>"a coffee and ManY briliant Ideas"</h5>
-        </div>
-    </div>
-    <!-- description end -->
-    <!-- container-item start-->
-    <div class="container-item" id="projek">
-         <!-- Valentine Card -->
-         <div class="box">
-            <div class="box-image">
-                <img src="./img/valentine-card.jpg" alt="valentine-card.jpg">
-            </div>
-            <h2>Valentine Card</h2>
-            <h3>Dibuat : 13 Februari 2021</h3>
-            <p>
-                Bagikan kartu ucapan kepada seseorang yang spesial bagimu
-            </p>
-            <div class="button">
-                <a href="projeck/valentineDayCard">Ayo Buat!</a>
-            </div>
-        </div>
-        <!-- pomodoro -->
-        <div class="box">
-            <div class="box-image">
-                <img src="img/pomodoro.jpg" alt="pomodoro.jpg">
-            </div>
-            <h2>Pomodoro</h2>
-            <h3>Dibuat : 19 Juli 2020</h3>
-            <p>
-                POMODORO adalah sebuah konsep dalam memanajemen waktu bekerja dalam suatu interval waktu tertentu dan
-                juga waktu istirahat dalam waktu tertentu.
-            </p>
-            <div class="button">
-                <a href="projeck/pomodoro">kunjungi</a>
-            </div>
-        </div>
-        <!-- GameCegahCorona -->
-        <div class="box">
-            <div class="box-image">
-                <img src="img/gameCegahCorona.jpg" alt="pomodoro.jpg">
-            </div>
-            <h2>Game Cegah Corona</h2>
-            <h3>Dibuat : 5 Agustus 2020</h3>
-            <p>
-                Cegah Corona Game ini bertujuan untuk menghibur sekaligus sebagai edukasi mengenai covid-19.
-            </p>
-            <div class="button">
-                <a href="projeck/gameCegahCorona">kunjungi</a>
-            </div>
-        </div>
-        <!-- Timer-Manual -->
-        <div class="box">
-            <div class="box-image">
-                <img src="img/img-test.jpg" alt="img-test.jpg">
-            </div>
-            <h2>Timer-Manual</h2>
-            <h3>Dibuat : -----</h3>
-            <p>
-                Atur waktu anda sesuai kebutuhan anda, sebagai pengingat dengan waktu yang telah anda tentukan.
-            </p>
-            <div class="button">
-                <a href="#">Segera...</a>
-            </div>
-        </div>
-    </div>
-    <!-- container-item end -->
-    <!-- footer start-->
-    <div class="footerPart">
-        <div class="footer-top3"></div>
-        <div class="footer-top2"></div>
-        <div class="footer-top1" id="hubungiKami">
-        </div>
-    </div>
-    <footer>
-        <div class="footer-1">
-            <h4>Ada pertanyaan? Hubungi Kami</h4>
-            <p>email : playeruser103@gmail.com</p>
-        </div>
-        <div class="footer-2">
-            <h5>Create by DisanJaya</h5>
-            <p>Copyright © 2020 DisanJaya. All Rights Reserved</p>
-        </div>
-    </footer>
-    <!-- footer-end -->
-    <!-- source-code js start -->
-    <script src="js/jquery-3.5.1.min.js"></script>
-    <script src="js/script.js"></script>
-    <!-- source-code js end -->
-</body>
 
+    <!-- -------------------------------------------- -->
+
+    <!-- afterLoading-->
+    <div class="afterLoading">
+      <!-- navbar-->
+      <nav class="down1">
+        <div class="img">
+          <img src="/img/logo.png" alt="logo" />
+        </div>
+        <!-- menu -->
+        <div class="menu">
+          <div class="item-link">
+            <a href="/index.html#home" class="home">Home</a>
+            <div class="borderHome"></div>
+          </div>
+          <div class="item-link">
+            <a href="/index.html#project" class="project">Project</a>
+            <div class="borderProject"></div>
+          </div>
+          <div class="item-link">
+            <a href="/index.html#aboutMe" class="aboutMe">About Me</a>
+            <div class="borderAboutMe"></div>
+          </div>
+          <div class="item-link">
+            <a href="/index.html#contactMe" class="contactMe">Contact Me</a>
+            <div class="borderContactMe"></div>
+          </div>
+        </div>
+        <!-- hamburger-menu -->
+        <div class="hamburger-menu">
+          <div class="item-hamburger-menu"></div>
+          <div class="item-hamburger-menu-2"></div>
+          <div class="item-hamburger-menu"></div>
+        </div>
+      </nav>
+
+      <!-- banner -->
+      <div class="banner" id="home">
+        <!-- background1 -->
+        <div class="banner-background1">
+          <!-- cls-bgBanner -->
+          <svg
+            id="Layer_1"
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 1366 768"
+          >
+            <defs>
+              <style>
+                .cls-bgBanner1 {
+                  fill: url(#linear-gradient-bgBanner);
+                }
+                .cls-bgBanner2 {
+                  fill: url(#linear-gradient-bgBanner2);
+                }
+                .cls-bgBanner3 {
+                  opacity: 0.66;
+                }
+                .cls-bgBanner4 {
+                  fill: #3f3d56;
+                }
+                .cls-bgBanner5 {
+                  fill: #ff6584;
+                }
+                .cls-bgBanner6 {
+                  fill: #e5e5e5;
+                }
+                .cls-bgBanner7 {
+                  fill: #fff;
+                }
+                .cls-bgBanner8 {
+                  opacity: 0.61;
+                }
+                .cls-bgBanner9 {
+                  fill: #f2f2f2;
+                }
+                .cls-bgBanner10 {
+                  fill: #e6e6e6;
+                }
+                .cls-bgBanner11 {
+                  fill: #ccc;
+                }
+              </style>
+              <linearGradient
+                id="linear-gradient-bgBanner"
+                x1="-3.14"
+                y1="294.59"
+                x2="1375.97"
+                y2="294.59"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop offset="0" stop-color="#211d72" />
+                <stop offset="1" stop-color="aqua" />
+              </linearGradient>
+              <linearGradient
+                id="linear-gradient-bgBanner2"
+                x1="-3.27"
+                y1="256.01"
+                x2="1375.84"
+                y2="256.01"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop offset="0" stop-color="#3fa9f5" />
+                <stop offset="1" stop-color="#aaf1ff" />
+              </linearGradient>
+            </defs>
+            <path
+              class="cls-bgBanner1 bganimationUp1"
+              d="M-3.14-15.53,1376-13.71q-.43,177.75-.88,355.5c-22.48,27.83-60.51,66.83-117.45,89.87-90.33,36.55-143.3-1.44-235.92,8.17C856.86,456.93,853.54,595,719.43,604.26c-143.17,9.84-162.57-145.93-364.6-164.43-85.66-7.84-133.49,15.46-215.49-19.4C72.13,391.85,27.65,343.63.45,307.06Z"
+            />
+            <path
+              class="cls-bgBanner2 bganimationUp2"
+              d="M-3.27-25.18,1375.84-22.3c-1.4,26.92-3.15,67.41-3.82,116.94-.77,57.15.68,67.46-.24,77.93,0,0-.43,4-1.08,8-1.9,11.63-23.72,87.69-108,137.76-6.32,3.76-30,17.47-75.57,30.64-81.52,23.54-141.08,18.75-175.66,20.42C858.38,376.79,844.62,528.18,713.3,536.85,593.65,544.75,582.66,416,387.51,372.43c-107.72-24.06-139.4,7-220.08-36.77-52-28.24-121.45-86-155.75-174.3A310.32,310.32,0,0,1-1.26,119.49Z"
+            />
+            <g class="cls-bgBanner3">
+              <rect
+                class="cls-bgBanner4"
+                x="255.61"
+                y="655.33"
+                width="59.33"
+                height="57.71"
+              />
+              <path
+                class="cls-bgBanner4"
+                d="M339.18,733.11H231.37V635.27H339.18ZM232,732.45H338.54V635.93H232Z"
+              />
+              <path
+                class="cls-bgBanner4"
+                d="M487,598.19c-25.08,0-45.41-21.14-45.41-47.22s20.33-47.22,45.41-47.22S532.4,524.89,532.4,551h0C532.37,577,512.06,598.16,487,598.19Zm0-93.75c-24.71,0-44.74,20.83-44.74,46.53s20,46.52,44.74,46.52,44.74-20.83,44.74-46.52-20-46.5-44.74-46.53Z"
+              />
+              <ellipse
+                class="cls-bgBanner4"
+                cx="485.65"
+                cy="550.97"
+                rx="21.86"
+                ry="22.74"
+              />
+              <polygon
+                class="cls-bgBanner5"
+                points="509.1 627.71 522.09 619.91 529.59 633.42 516.6 641.22 509.1 627.71"
+              />
+              <polygon
+                class="cls-bgBanner4 svgUp3"
+                points="310.88 552.02 323.87 544.22 331.37 557.73 318.38 565.52 310.88 552.02"
+              />
+              <polygon
+                class="cls-bgBanner6 svgUp2"
+                points="491 712.81 503.99 705.01 511.49 718.52 498.5 726.32 491 712.81"
+              />
+              <rect
+                class="cls-bgBanner7"
+                x="279.85"
+                y="678.55"
+                width="10.84"
+                height="11.28"
+              />
+              <ellipse
+                class="cls-bgBanner7"
+                cx="485.65"
+                cy="550.97"
+                rx="5.38"
+                ry="5.6"
+              />
+            </g>
+            <g class="cls-bgBanner8">
+              <circle
+                class="cls-bgBanner9 pushToRight"
+                cx="519.61"
+                cy="186.98"
+                r="8.6"
+              />
+              <circle
+                class="cls-bgBanner9 pushToRight"
+                cx="485.32"
+                cy="186.98"
+                r="8.6"
+              />
+              <circle
+                class="cls-bgBanner9 pushToRight"
+                cx="451.03"
+                cy="186.98"
+                r="8.6"
+              />
+              <circle
+                class="cls-bgBanner9 pushToRight"
+                cx="416.73"
+                cy="186.98"
+                r="8.6"
+              />
+              <circle
+                class="cls-bgBanner9 pushToRight"
+                cx="519.61"
+                cy="222.91"
+                r="8.6"
+              />
+              <circle
+                class="cls-bgBanner9 pushToRight"
+                cx="485.32"
+                cy="222.91"
+                r="8.6"
+              />
+              <circle
+                class="cls-bgBanner9 pushToRight"
+                cx="451.03"
+                cy="222.91"
+                r="8.6"
+              />
+              <circle
+                class="cls-bgBanner9 pushToRight"
+                cx="416.73"
+                cy="222.91"
+                r="8.6"
+              />
+              <circle
+                class="cls-bgBanner9 pushToRight"
+                cx="519.61"
+                cy="258.83"
+                r="8.6"
+              />
+              <circle
+                class="cls-bgBanner9 pushToRight"
+                cx="485.32"
+                cy="258.83"
+                r="8.6"
+              />
+              <circle
+                class="cls-bgBanner9 pushToRight"
+                cx="451.03"
+                cy="258.83"
+                r="8.6"
+              />
+              <circle
+                class="cls-bgBanner9 pushToRight"
+                cx="416.73"
+                cy="258.83"
+                r="8.6"
+              />
+              <circle
+                class="cls-bgBanner9 pushToRight"
+                cx="519.61"
+                cy="294.76"
+                r="8.6"
+              />
+              <circle
+                class="cls-bgBanner9 pushToRight"
+                cx="485.32"
+                cy="294.76"
+                r="8.6"
+              />
+              <circle
+                class="cls-bgBanner9 pushToRight"
+                cx="451.03"
+                cy="294.76"
+                r="8.6"
+              />
+              <circle
+                class="cls-bgBanner9 pushToRight"
+                cx="416.73"
+                cy="294.76"
+                r="8.6"
+              />
+              <circle
+                class="cls-bgBanner9 pushToRight"
+                cx="519.61"
+                cy="330.69"
+                r="8.6"
+              />
+              <circle
+                class="cls-bgBanner9 pushToRight"
+                cx="485.32"
+                cy="330.69"
+                r="8.6"
+              />
+              <circle
+                class="cls-bgBanner9 pushToRight"
+                cx="451.03"
+                cy="330.69"
+                r="8.6"
+              />
+              <circle
+                class="cls-bgBanner9 pushToRight"
+                cx="416.73"
+                cy="330.69"
+                r="8.6"
+              />
+              <circle
+                class="cls-bgBanner9 pushToRight"
+                cx="519.61"
+                cy="366.61"
+                r="8.6"
+              />
+              <circle
+                class="cls-bgBanner9 pushToRight"
+                cx="485.32"
+                cy="366.61"
+                r="8.6"
+              />
+              <circle
+                class="cls-bgBanner9 pushToRight"
+                cx="451.03"
+                cy="366.61"
+                r="8.6"
+              />
+              <circle
+                class="cls-bgBanner9 pushToRight"
+                cx="416.73"
+                cy="366.61"
+                r="8.6"
+              />
+              <path
+                class="cls-bgBanner10 floatingUp"
+                d="M719.46,362.68V129.16a10,10,0,0,1,10-10H914.06a10,10,0,0,1,10,10V362.68a10,10,0,0,1-10,10H729.47A10,10,0,0,1,719.46,362.68Zm10-241.31a7.81,7.81,0,0,0-7.79,7.79V362.68a7.8,7.8,0,0,0,7.79,7.78H914.06a7.8,7.8,0,0,0,7.78-7.78V129.16a7.8,7.8,0,0,0-7.78-7.79Z"
+              />
+              <path
+                class="cls-bgBanner7 floatingUp"
+                d="M832.11,226.39V178.44a5,5,0,0,1,5-5h40.63a5,5,0,0,1,5,5v47.95a5,5,0,0,1-5,5H837.12A5,5,0,0,1,832.11,226.39Z"
+              />
+              <path
+                class="cls-bgBanner11 floatingDown"
+                d="M753.16,248.63V200.68a5,5,0,0,1,5-5H798.8a5,5,0,0,1,5,5v47.95a5,5,0,0,1-5,5H758.17A5,5,0,0,1,753.16,248.63Z"
+              />
+              <path
+                class="cls-bgBanner5 floatingUp"
+                d="M816.55,316.46V268.51a5,5,0,0,1,5-5h40.63a5,5,0,0,1,5,5v47.95a5,5,0,0,1-5,5H821.55A5,5,0,0,1,816.55,316.46Z"
+              />
+              <circle
+                class="cls-bgBanner9 floatingDown"
+                cx="1126.42"
+                cy="134.88"
+                r="8.6"
+              />
+              <circle
+                class="cls-bgBanner9 floatingDown"
+                cx="1126.42"
+                cy="169.17"
+                r="8.6"
+              />
+              <circle
+                class="cls-bgBanner9 floatingDown"
+                cx="1126.42"
+                cy="203.46"
+                r="8.6"
+              />
+              <circle
+                class="cls-bgBanner9 floatingDown"
+                cx="1126.42"
+                cy="237.76"
+                r="8.6"
+              />
+              <circle
+                class="cls-bgBanner9 floatingDown"
+                cx="1090.5"
+                cy="134.88"
+                r="8.6"
+              />
+              <circle
+                class="cls-bgBanner9 floatingDown"
+                cx="1090.5"
+                cy="169.17"
+                r="8.6"
+              />
+              <circle
+                class="cls-bgBanner9 floatingDown"
+                cx="1090.5"
+                cy="203.46"
+                r="8.6"
+              />
+              <circle
+                class="cls-bgBanner9 floatingDown"
+                cx="1090.5"
+                cy="237.76"
+                r="8.6"
+              />
+              <circle
+                class="cls-bgBanner9 floatingDown"
+                cx="1054.57"
+                cy="134.88"
+                r="8.6"
+              />
+              <circle
+                class="cls-bgBanner9 floatingDown"
+                cx="1054.57"
+                cy="169.17"
+                r="8.6"
+              />
+              <circle
+                class="cls-bgBanner9 floatingDown"
+                cx="1054.57"
+                cy="203.46"
+                r="8.6"
+              />
+              <circle
+                class="cls-bgBanner9 floatingDown"
+                cx="1054.57"
+                cy="237.76"
+                r="8.6"
+              />
+              <circle
+                class="cls-bgBanner9 floatingDown"
+                cx="1018.65"
+                cy="134.88"
+                r="8.6"
+              />
+              <circle
+                class="cls-bgBanner9 floatingDown"
+                cx="1018.65"
+                cy="169.17"
+                r="8.6"
+              />
+              <circle
+                class="cls-bgBanner9 floatingDown"
+                cx="1018.65"
+                cy="203.46"
+                r="8.6"
+              />
+              <circle
+                class="cls-bgBanner9 floatingDown"
+                cx="1018.65"
+                cy="237.76"
+                r="8.6"
+              />
+              <circle
+                class="cls-bgBanner9 floatingDown"
+                cx="982.72"
+                cy="134.88"
+                r="8.6"
+              />
+              <circle
+                class="cls-bgBanner9 floatingDown"
+                cx="982.72"
+                cy="169.17"
+                r="8.6"
+              />
+              <circle
+                class="cls-bgBanner9 floatingDown"
+                cx="982.72"
+                cy="203.46"
+                r="8.6"
+              />
+              <circle
+                class="cls-bgBanner9 floatingDown"
+                cx="982.72"
+                cy="237.76"
+                r="8.6"
+              />
+              <circle
+                class="cls-bgBanner9 floatingDown"
+                cx="946.79"
+                cy="134.88"
+                r="8.6"
+              />
+              <circle
+                class="cls-bgBanner9 floatingDown"
+                cx="946.79"
+                cy="169.17"
+                r="8.6"
+              />
+              <circle
+                class="cls-bgBanner9 floatingDown"
+                cx="946.79"
+                cy="203.46"
+                r="8.6"
+              />
+              <circle
+                class="cls-bgBanner9 floatingDown"
+                cx="946.79"
+                cy="237.76"
+                r="8.6"
+              />
+            </g>
+            <g class="cls-bgBanner3">
+              <path
+                id="bec063ed-0fa9-413a-bd83-d8526fa41b8c"
+                class="cls-bgBanner7"
+                d="M961,578.78l20.65-24.12,20.65-24.13,21.15,59.89-31.22-5.82Z"
+              />
+              <rect
+                id="aa6e6c0d-ca3b-4989-ae08-5d6fb21b7d28"
+                class="cls-bgBanner10"
+                x="949.33"
+                y="668.87"
+                width="66.59"
+                height="66.59"
+                transform="translate(-177.71 367.17) rotate(-19.44)"
+              />
+              <circle
+                id="e644b8cb-fae5-4de8-b33a-50bfc45133bc"
+                class="cls-bgBanner7 circle"
+                cx="843.95"
+                cy="665.19"
+                r="42.73"
+              />
+              <path
+                id="a646102d-3f95-413e-a731-a5030e030d8b"
+                class="cls-bgBanner11"
+                d="M898.42,605.18a7.07,7.07,0,1,1,4.32-9A7.07,7.07,0,0,1,898.42,605.18Zm-.39-1.11a5.9,5.9,0,1,0-7.52-3.6A5.9,5.9,0,0,0,898,604.07Z"
+              />
+              <path
+                id="a7867f82-9da8-49b7-a62f-5fc2df52f7dd"
+                class="cls-bgBanner11 svgUp1"
+                d="M1034.69,621.64l-7.06,13.53-13.53-7.06,7.06-13.53Zm-7.55,12,6-11.45-11.45-6-6,11.45Z"
+              />
+              <path
+                id="abfd432a-addf-48b7-a638-56871f84cdda"
+                class="cls-bgBanner11 svgUp3"
+                d="M913.6,755.57l-5.75,11-11-5.75,5.75-11Zm-6.15,9.72,4.86-9.32L903,751.11l-4.86,9.32Z"
+              />
+              <path
+                id="b4b6c2e3-9a65-466b-808f-faa311f7d0ed"
+                class="cls-bgBanner4"
+                d="M885.71,639.2a58.93,58.93,0,1,1-75.19-36A58.93,58.93,0,0,1,885.71,639.2ZM775.68,678a57.75,57.75,0,1,0,35.23-73.68A57.76,57.76,0,0,0,775.68,678Z"
+              />
+              <rect
+                id="f21400a3-3aa1-44f2-adc5-de8006399ef9"
+                class="cls-bgBanner4"
+                x="902.4"
+                y="661.5"
+                width="1.18"
+                height="35.15"
+                transform="translate(130.09 1503.19) rotate(-83.78)"
+              />
+              <rect
+                id="fdf13e27-5b88-4b47-a548-6eba64ef8ea7"
+                class="cls-bgBanner4"
+                x="924.67"
+                y="618.34"
+                width="76.25"
+                height="1.18"
+                transform="translate(201.22 1473.35) rotate(-81.02)"
+              />
+              <path
+                id="ec996080-b25c-43f9-95b1-17d83c771fa1"
+                class="cls-bgBanner4"
+                d="M997.22,641.71l28.64,81.13-81.13,28.64-28.65-81.13Zm27.14,80.41L996.5,643.21l-78.91,27.86L945.45,750Z"
+              />
+              <path
+                id="e64eb5c0-2762-4bb4-99c9-e384d48b09ae"
+                class="cls-bgBanner4"
+                d="M994.75,507.26l29.63,83.93-87.49-16.31Zm27.84,82.39-28.27-80.07L939.11,574.1Z"
+              />
+              <path
+                id="a0fb9511-7a08-40c5-84ea-69c7b1520cf5"
+                class="cls-bgBanner4"
+                d="M1185.54,625.55c-.19.23-4.74,5.72-16.3,11.15-10.61,5-29.4,10.82-58.65,10.34-55.41-.92-87,35.44-87.34,35.81l-1-.88c.08-.09,8.12-9.43,23-18.51a121.31,121.31,0,0,1,65.43-17.78c55.32.92,73.7-20.77,73.88-21Z"
+              />
+              <circle
+                id="f311804e-8539-4d4f-8733-0b334c90657a"
+                class="cls-bgBanner7 svgUp2"
+                cx="1036"
+                cy="656.89"
+                r="8.81"
+              />
+              <circle
+                id="a6573fda-74df-4cf8-bcdf-8c67e75bc2cf"
+                class="cls-bgBanner7 svgUp3"
+                cx="1109.1"
+                cy="658.39"
+                r="8.81"
+              />
+              <path
+                id="ecf71195-8595-47d1-9f0d-85506c4dd5f7"
+                class="cls-bgBanner11 svgUp2"
+                d="M1078.54,646.59a7.07,7.07,0,1,1,4.32-9A7.07,7.07,0,0,1,1078.54,646.59Zm-.39-1.11a5.9,5.9,0,1,0-7.52-3.6A5.9,5.9,0,0,0,1078.15,645.48Z"
+              />
+              <path
+                id="a4f0274e-f5b3-4a0e-a250-2f78ed178189"
+                class="cls-bgBanner11 svgUp1"
+                d="M1065.05,673.94a7.07,7.07,0,1,1,4.31-9A7.07,7.07,0,0,1,1065.05,673.94Zm-.39-1.11a5.9,5.9,0,1,0-7.52-3.6A5.89,5.89,0,0,0,1064.66,672.83Z"
+              />
+            </g>
+          </svg>
+        </div>
+        <!-- banner-title -->
+        <div class="banner-title">
+          <h2>Hai!</h2>
+          <h1>
+            saya <span class="text"></span
+            ><span class="borderRight fade1"></span>
+          </h1>
+          <h4 class="up1">seorang Pelajar</h4>
+        </div>
+      </div>
+
+      <!-- content1-->
+      <div class="content1">
+        <div class="content1-body">
+          <!-- contentLeft -->
+          <div class="content1-left">
+            <!-- imgSvg1 -->
+            <div class="imgSvg1">
+              <!-- cls-bgSvg1 -->
+              <svg
+                id="Layer_1"
+                data-name="Layer 1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 500 500"
+              >
+                <defs>
+                  <style>
+                    .cls-bgSvg11,
+                    .cls-bgSvg12 {
+                      fill: #fff;
+                    }
+                    .cls-bgSvg11,
+                    .cls-bgSvg14 {
+                      opacity: 0.2;
+                    }
+                    .cls-bgSvg11,
+                    .cls-bgSvg113,
+                    .cls-bgSvg14,
+                    .cls-bgSvg18 {
+                      isolation: isolate;
+                    }
+                    .cls-bgSvg113,
+                    .cls-bgSvg13 {
+                      fill: none;
+                      stroke-miterlimit: 10;
+                    }
+                    .cls-bgSvg13 {
+                      stroke: #535461;
+                      stroke-width: 2px;
+                    }
+                    .cls-bgSvg14 {
+                      fill: #f5f5f5;
+                    }
+                    .cls-bgSvg15 {
+                      fill: url(#linear-gradient);
+                    }
+                    .cls-bgSvg16 {
+                      fill: #e14b5a;
+                    }
+                    .cls-bgSvg17 {
+                      fill: #f7c4a7;
+                    }
+                    .cls-bgSvg110,
+                    .cls-bgSvg113,
+                    .cls-bgSvg18 {
+                      opacity: 0.1;
+                    }
+                    .cls-bgSvg19 {
+                      fill: #960606;
+                    }
+                    .cls-bgSvg111 {
+                      fill: #632652;
+                    }
+                    .cls-bgSvg112 {
+                      fill: #535461;
+                    }
+                    .cls-bgSvg113 {
+                      stroke: #000;
+                    }
+                    .cls-bgSvg114 {
+                      fill: #6a5c99;
+                    }
+                    .cls-bgSvg115 {
+                      fill: #ffd037;
+                    }
+                    .cls-bgSvg116 {
+                      fill: #d6d6e3;
+                    }
+                    .cls-bgSvg117 {
+                      fill: #f2f2f2;
+                    }
+                    .cls-bgSvg118 {
+                      fill: #e6e6e6;
+                    }
+                    .cls-bgSvg119 {
+                      fill: #5e90ff;
+                    }
+                    .cls-bgSvg120 {
+                      fill: #ff6584;
+                    }
+                  </style>
+                  <linearGradient
+                    id="linear-gradient"
+                    x1="434.15"
+                    y1="67.21"
+                    x2="434.15"
+                    y2="327.3"
+                    gradientTransform="matrix(1, 0, 0, -1, -149.42, 445.5)"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop offset="0" stop-color="gray" stop-opacity="0.25" />
+                    <stop offset="0.54" stop-color="gray" stop-opacity="0.12" />
+                    <stop offset="1" stop-color="gray" stop-opacity="0.1" />
+                  </linearGradient>
+                </defs>
+                <rect
+                  class="cls-bgSvg11"
+                  x="429.52"
+                  y="231.35"
+                  width="24.93"
+                  height="12.95"
+                />
+                <rect
+                  class="cls-bgSvg11"
+                  x="431.44"
+                  y="247.18"
+                  width="24.93"
+                  height="12.95"
+                />
+                <rect
+                  class="cls-bgSvg11"
+                  x="410.82"
+                  y="137.38"
+                  width="24.93"
+                  height="12.95"
+                />
+                <rect
+                  class="cls-bgSvg11"
+                  x="428.56"
+                  y="152.24"
+                  width="24.93"
+                  height="12.95"
+                />
+                <rect
+                  class="cls-bgSvg11"
+                  x="380.62"
+                  y="138.34"
+                  width="24.93"
+                  height="12.95"
+                />
+                <rect
+                  class="cls-bgSvg11"
+                  x="460.69"
+                  y="167.11"
+                  width="24.93"
+                  height="12.95"
+                />
+                <rect
+                  class="cls-bgSvg11"
+                  x="430.48"
+                  y="168.06"
+                  width="24.93"
+                  height="12.95"
+                />
+                <rect
+                  class="cls-bgSvg11"
+                  x="398.36"
+                  y="153.2"
+                  width="24.93"
+                  height="12.95"
+                />
+                <rect
+                  class="cls-bgSvg11"
+                  x="459.25"
+                  y="266.83"
+                  width="24.93"
+                  height="12.95"
+                />
+                <rect
+                  class="cls-bgSvg11"
+                  x="429.04"
+                  y="267.79"
+                  width="24.93"
+                  height="12.95"
+                />
+                <path
+                  class="cls-bgSvg12 leaf1"
+                  d="M126.08,228s35.14,35.14,15.3,87.26,34,138.87,34,138.87-.57-.08-1.64-.27c-72.17-12.74-108-95.28-67.88-156.58C120.76,274.46,133,247.72,126.08,228Z"
+                />
+                <path
+                  class="cls-bgSvg13 leaf1"
+                  d="M126.08,228s19.84,43.07,0,78.21S122.68,440,175.39,454.13"
+                />
+                <path
+                  class="cls-bgSvg12 leaf2"
+                  d="M63.49,370.12s40.1-6.39,43.75,29.55,77.11,40.92,77.11,40.92l-1.38.91C122.33,481.3,64.35,466.86,73.09,414,76.34,394.35,76.07,374.61,63.49,370.12Z"
+                />
+                <path
+                  class="cls-bgSvg14 leaf2"
+                  d="M63.49,370.12s40.1-6.39,43.75,29.55,77.11,40.92,77.11,40.92l-1.38.91C122.33,481.3,64.35,466.86,73.09,414,76.34,394.35,76.07,374.61,63.49,370.12Z"
+                />
+                <path
+                  class="cls-bgSvg13 leaf2"
+                  d="M63.49,370.12S94.61,377,92.06,405.25s46.22,62.24,92.29,35.34"
+                />
+                <rect
+                  class="cls-bgSvg11"
+                  x="63.69"
+                  y="231.83"
+                  width="24.93"
+                  height="12.95"
+                />
+                <rect
+                  class="cls-bgSvg11"
+                  x="81.43"
+                  y="246.7"
+                  width="24.93"
+                  height="12.95"
+                />
+                <rect
+                  class="cls-bgSvg11"
+                  x="216.16"
+                  y="95.66"
+                  width="24.93"
+                  height="12.95"
+                />
+                <rect
+                  class="cls-bgSvg11"
+                  x="412.74"
+                  y="334.44"
+                  width="24.93"
+                  height="12.95"
+                />
+                <rect
+                  class="cls-bgSvg11"
+                  x="83.35"
+                  y="262.52"
+                  width="24.93"
+                  height="12.95"
+                />
+                <rect
+                  class="cls-bgSvg11"
+                  x="233.9"
+                  y="110.53"
+                  width="24.93"
+                  height="12.95"
+                />
+                <rect
+                  class="cls-bgSvg11"
+                  x="142.8"
+                  y="198.27"
+                  width="24.93"
+                  height="12.95"
+                />
+                <rect
+                  class="cls-bgSvg11"
+                  x="160.54"
+                  y="213.13"
+                  width="24.93"
+                  height="12.95"
+                />
+                <rect
+                  class="cls-bgSvg11"
+                  x="208.01"
+                  y="204.98"
+                  width="24.93"
+                  height="12.95"
+                />
+                <rect
+                  class="cls-bgSvg11"
+                  x="162.46"
+                  y="228.96"
+                  width="24.93"
+                  height="12.95"
+                />
+                <rect
+                  class="cls-bgSvg11"
+                  x="446.3"
+                  y="334.44"
+                  width="24.93"
+                  height="12.95"
+                />
+                <path
+                  class="cls-bgSvg15"
+                  d="M408.92,283.19A197.11,197.11,0,0,1,406,256h0a36.44,36.44,0,0,0-25.63-33.27c-2.62-.8-5.5-1.56-8.68-2.23-27.91-5.93-36.38-.75-37.35-.07a37.62,37.62,0,0,1-2.12-4.61c-.05-.16-.09-.33-.14-.48a35.76,35.76,0,0,0,9.55-21.52c4.65-4.72,7.37-10.42,7.37-16.55a22.68,22.68,0,0,0-5.54-14.5v-8.34a36.23,36.23,0,0,0-36.23-36.23h-2.94A36.23,36.23,0,0,0,268,154.43h0v9a22.47,22.47,0,0,0-5,13.85c0,6,2.6,11.58,7.08,16.24A35.66,35.66,0,0,0,280,215.72c.19,1.36.39,2.83.59,4.37l-49.91,10.54s-19.25.8-31.65,26.37c-10.48,21.67-31.35,77.34-37.53,93.91h0c-1.12,3-1.75,4.72-1.75,4.72s.21-.21.6-.56l-.6,1.62s.3-.31.88-.81c-.87,6.93-1,18.83,8.08,20.31,7.62,1.25,27.24,1.76,42.06,2h1c9.83.13,17.3.13,17.3.13v-.13H388.51v-1.64a10.82,10.82,0,0,0-.87-4.31l.22-.27a8.7,8.7,0,0,1,1.65,3.83c0,.14,0,.27-.07.41l.09-.25a4,4,0,0,1-.09,1.3s20.44-52.69,20.22-84.15A53.75,53.75,0,0,0,408.92,283.19Zm-127.47-56a38.45,38.45,0,0,1-.51-4.54v0C281.12,224.1,281.29,225.64,281.45,227.21Zm-62,113.17v12.56l-7.86,1.68Z"
+                />
+                <path
+                  class="cls-bgSvg16 faceRotate"
+                  d="M304.9,123.27h0a36.23,36.23,0,0,1,36.23,36.23V175H268.67V159.5A36.23,36.23,0,0,1,304.9,123.27Z"
+                />
+                <ellipse
+                  class="cls-bgSvg16 faceRotate"
+                  cx="305.15"
+                  cy="180.03"
+                  rx="41.3"
+                  ry="28.38"
+                />
+                <path
+                  class="cls-bgSvg17"
+                  d="M278.68,207.52s8.63,45.1,0,57.27,26.37,17,26.37,17l36.23-13.17,5.07-32.44s-22.06-12.42-17.49-37.5Z"
+                />
+                <path
+                  class="cls-bgSvg17"
+                  d="M385.61,359.56s2.28,9.88-10.14,11.65a70.25,70.25,0,0,1-22.09-.26l-2.74-24.82h28.89Z"
+                />
+                <path
+                  class="cls-bgSvg17 rightHand"
+                  d="M166.33,346.91s-5.48,22.29,6.93,24.3,58,2,58,2V346.87l-20.65,4.41L191.25,332.7Z"
+                />
+                <path
+                  class="cls-bgSvg18"
+                  d="M281.34,222.09l-48.52,10.26s-18.5.76-30.41,25.34-37.76,94.77-37.76,94.77,22.06-22.3,47.9,1.52l17.23-31.16L226,372.23H359.5V348.91s27.87,14.95,25.85,23.31c0,0,23.85-61.45,18.69-89.38a189.62,189.62,0,0,1-2.84-26.13h0a35,35,0,0,0-24.64-32c-2.51-.77-5.27-1.49-8.34-2.14-28.63-6.08-36,0-36,0s-5.55,18.05-5.45,26.23c.13,10.51-14.95,17.48-14.95,17.48s-22.3-5.32-23.31-9.63S279.56,227.16,281.34,222.09Z"
+                />
+                <path
+                  class="cls-bgSvg19"
+                  d="M281.34,221.08l-48.52,10.26s-18.5.76-30.41,25.34-37.76,94.78-37.76,94.78,22-22.3,47.89,1.52l17.23-31.17-3.8,49.4H359.5V347.9s27.87,15,25.85,23.31c0,0,23.85-61.45,18.69-89.38a189.62,189.62,0,0,1-2.84-26.13h0a35,35,0,0,0-24.64-32c-2.51-.77-5.27-1.5-8.34-2.14-28.63-6.08-36,0-36,0s-5.55,18-5.45,26.22c.13,10.52-14.95,17.49-14.95,17.49s-22.3-5.32-23.31-9.63S279.56,226.15,281.34,221.08Z"
+                />
+                <path
+                  class="cls-bgSvg18 faceRotate"
+                  d="M330.93,218.93a34.31,34.31,0,0,1-1.32-18l-50.18,8.86s.72,3.79,1.54,9.48a34.46,34.46,0,0,0,48.72.9c.42-.41.83-.83,1.23-1.25Z"
+                />
+                <path
+                  class="cls-bgSvg17 faceRotate"
+                  d="M339.49,193.08a34.46,34.46,0,0,1-68.91.83v-.83a34.46,34.46,0,0,1,19.31-31,33.21,33.21,0,0,1,3.19-1.36,34.57,34.57,0,0,1,17.74-1.65h0a34.42,34.42,0,0,1,28.58,31.69C339.46,191.55,339.49,192.31,339.49,193.08Z"
+                />
+                <g class="cls-bgSvg110 faceRotate">
+                  <path
+                    d="M293,161.56l.05,0a34.43,34.43,0,0,0-22.5,32.33v.83a7.67,7.67,0,0,0,3.09-.74c8.4-3.92,13.43-15.92,15.42-24.28C289.8,166.67,290.48,163.29,293,161.56Z"
+                  />
+                  <path
+                    d="M319.4,162.52a34.32,34.32,0,0,0-8.57-2.64,11,11,0,0,1,6.15,3.86,15.66,15.66,0,0,1,1.89,3.36,34.56,34.56,0,0,0-29,.6c2.17,4.74,8.87,7.33,13.35,9.06q7.36,2.84,14.87,5.19l-4.43-3.6,10,1.6a17.28,17.28,0,0,0-.7-5.9c1.92,1.54,4.46,2.06,6.54,3.35,3.9,2.46,5.53,7.2,7.65,11.3a7.44,7.44,0,0,0,2.23,2.87A34.47,34.47,0,0,0,319.4,162.52Z"
+                  />
+                </g>
+                <path
+                  class="cls-bgSvg111 faceRotate"
+                  d="M293,160.78l.05,0a32,32,0,0,0-3.18,1.36,34.47,34.47,0,0,0-19.32,31v.83a7.67,7.67,0,0,0,3.09-.74c8.4-3.92,13.43-15.92,15.42-24.29C289.8,165.91,290.48,162.52,293,160.78Z"
+                />
+                <path
+                  class="cls-bgSvg111 faceRotate"
+                  d="M319.4,161.74a34.32,34.32,0,0,0-8.57-2.64A11,11,0,0,1,317,163a15.35,15.35,0,0,1,1.89,3.35,34.6,34.6,0,0,0-29,.6c2.17,4.74,8.87,7.33,13.35,9.06q7.36,2.84,14.87,5.19l-4.43-3.59,10,1.59a17.31,17.31,0,0,0-.7-5.9c1.92,1.54,4.46,2.06,6.54,3.36,3.9,2.46,5.53,7.19,7.65,11.29a7.55,7.55,0,0,0,2.23,2.88A34.48,34.48,0,0,0,319.4,161.74Z"
+                />
+                <path
+                  class="cls-bgSvg18 faceRotate"
+                  d="M266.64,187.4s35.48-44.11,76.53,0l-3.55-9.89s-19.26-28.12-32.94-22-27.11,10.39-27.11,10.39Z"
+                />
+                <path
+                  class="cls-bgSvg16 faceRotate"
+                  d="M266.64,186.61s35.48-44.11,76.53,0l-3.55-9.88s-19.26-28.12-32.94-22-27.11,10.39-27.11,10.39Z"
+                />
+                <path
+                  class="cls-bgSvg18"
+                  d="M237.5,281.64s-7.6,20.27,3,38.52S231.16,346,231.16,346"
+                />
+                <path
+                  class="cls-bgSvg18 faceRotate"
+                  d="M360.65,263.4s13.17,16.72,4.56,31.67S357.1,346,357.1,346"
+                />
+                <path
+                  class="cls-bgSvg112"
+                  d="M225.84,361H372.3a12.17,12.17,0,0,1,12.17,12.17H213.68A12.18,12.18,0,0,1,225.84,361Z"
+                />
+                <path
+                  class="cls-bgSvg112"
+                  d="M240.74,277.33H357.41a18.7,18.7,0,0,1,18.7,18.7v67.71H222V296A18.7,18.7,0,0,1,240.74,277.33Z"
+                />
+                <circle class="cls-bgSvg12" cx="298.95" cy="324.34" r="9.12" />
+                <path
+                  class="cls-bgSvg113 faceRotate"
+                  d="M268.67,166.72s34.86-34.85,72.47-.64"
+                />
+                <rect
+                  class="cls-bgSvg114 faceRotate"
+                  x="346.45"
+                  y="164.5"
+                  width="3.5"
+                  height="19.85"
+                />
+                <path
+                  class="cls-bgSvg115 faceRotate"
+                  d="M341.78,177.34h0a12.06,12.06,0,0,1,12.06,12.06v.78a12.07,12.07,0,0,1-12.06,12.07h0V177.34Z"
+                />
+                <path
+                  class="cls-bgSvg114 faceRotate"
+                  d="M342.16,176.18h0a2.72,2.72,0,0,1,2.73,2.72v21.79a2.72,2.72,0,0,1-2.73,2.72h0a2.72,2.72,0,0,1-2.72-2.72V178.9A2.72,2.72,0,0,1,342.16,176.18Z"
+                />
+                <rect
+                  class="cls-bgSvg114 faceRotate"
+                  x="259.5"
+                  y="164.89"
+                  width="3.5"
+                  height="19.85"
+                />
+                <path
+                  class="cls-bgSvg115 faceRotate"
+                  d="M267.67,202.63h0a12.06,12.06,0,0,1-12.06-12.06v-.78a12.06,12.06,0,0,1,12.06-12.06h0v24.9Z"
+                />
+                <path
+                  class="cls-bgSvg114 faceRotate"
+                  d="M267.28,203.8h0a2.72,2.72,0,0,1-2.72-2.72v-21.8a2.72,2.72,0,0,1,2.72-2.72h0a2.72,2.72,0,0,1,2.73,2.72v21.8A2.72,2.72,0,0,1,267.28,203.8Z"
+                />
+                <path
+                  class="cls-bgSvg115 faceRotate"
+                  d="M346,143.29c-4.74-9.86-15.07-21.78-37.33-22.73v0h-.27l-7.88.37v0c-22.12,1-32.4,12.9-37.12,22.72a51.08,51.08,0,0,0-4.9,21.29l2.72-.07,2.72-.06a46.37,46.37,0,0,1,4.43-18.95c6-12.33,17.05-18.89,32.83-19.5h0l7-.38h0c15.79.6,26.84,7.16,32.84,19.49a46.31,46.31,0,0,1,4.44,19l2.72.06,2.72.07A50.91,50.91,0,0,0,346,143.29Z"
+                />
+                <rect
+                  class="cls-bgSvg116"
+                  x="99"
+                  y="373.27"
+                  width="371.45"
+                  height="99.73"
+                />
+                <rect
+                  class="cls-bgSvg18"
+                  x="99"
+                  y="379.99"
+                  width="371.45"
+                  height="12.95"
+                />
+                <rect
+                  class="cls-bgSvg116"
+                  x="74.09"
+                  y="371.84"
+                  width="421.27"
+                  height="12.95"
+                />
+                <path
+                  class="cls-bgSvg117 messageLeft"
+                  d="M308.2,14.42,404.14,25.5A12.19,12.19,0,0,1,415,38.87l-5.91,51.18a12.2,12.2,0,0,1-13.65,10.54L299.53,89.51a12.2,12.2,0,0,1-10.89-13.37L294.55,25A12.2,12.2,0,0,1,308.2,14.42Z"
+                />
+                <path
+                  class="cls-bgSvg12 messageLeft"
+                  d="M307.8,17.86l95.94,11.08a8.69,8.69,0,0,1,7.75,9.53l-5.91,51.17a8.7,8.7,0,0,1-9.72,7.51L299.92,86.07a8.69,8.69,0,0,1-7.75-9.53l5.91-51.17A8.7,8.7,0,0,1,307.8,17.86Z"
+                />
+                <path
+                  class="cls-bgSvg117 messageLeft"
+                  d="M298.35,107.94a2.23,2.23,0,0,1-.83-.26,2.09,2.09,0,0,1-1.11-2.11l2-17.69,24.28,2L299.94,107.5A2.16,2.16,0,0,1,298.35,107.94Z"
+                />
+                <path
+                  class="cls-bgSvg117 messageLeft"
+                  d="M318.11,32l72.14,8.33a5.19,5.19,0,0,1,4.64,5.7h0a5.2,5.2,0,0,1-5.81,4.5l-72.15-8.33a5.21,5.21,0,0,1-4.64-5.7h0A5.21,5.21,0,0,1,318.11,32Z"
+                />
+                <path
+                  class="cls-bgSvg117 messageLeft"
+                  d="M316.35,48.24l72.14,8.33a5.19,5.19,0,0,1,4.64,5.7h0a5.2,5.2,0,0,1-5.82,4.5l-72.14-8.33a5.2,5.2,0,0,1-4.64-5.7h0A5.21,5.21,0,0,1,316.35,48.24Z"
+                />
+                <path
+                  class="cls-bgSvg117 messageLeft"
+                  d="M314.59,64.53l72.14,8.33a5.21,5.21,0,0,1,4.64,5.7h0a5.21,5.21,0,0,1-5.82,4.5l-72.14-8.33a5.19,5.19,0,0,1-4.64-5.7h0A5.2,5.2,0,0,1,314.59,64.53Z"
+                />
+                <path
+                  class="cls-bgSvg118 message2"
+                  d="M456.68,58,360.74,46.93a12.22,12.22,0,0,0-13.65,10.55l-5.91,51.17A12.22,12.22,0,0,0,352.07,122L448,133.11a12.22,12.22,0,0,0,13.65-10.55l5.91-51.17A12.22,12.22,0,0,0,456.68,58Z"
+                />
+                <path
+                  class="cls-bgSvg12 message2"
+                  d="M456.28,61.45,360.34,50.37a8.7,8.7,0,0,0-9.72,7.51l-5.91,51.18a8.7,8.7,0,0,0,7.76,9.52l95.93,11.08a8.69,8.69,0,0,0,9.72-7.51L464,71A8.7,8.7,0,0,0,456.28,61.45Z"
+                />
+                <path
+                  class="cls-bgSvg118 message2"
+                  d="M438.66,150l-18.18-22.34,24.1,3.58-2,17.69a2.09,2.09,0,0,1-1.57,1.8,2.27,2.27,0,0,1-.86.07A2.23,2.23,0,0,1,438.66,150Z"
+                />
+                <!-- image icon like,love svg -->
+                <circle
+                  class="cls-bgSvg12 likes1"
+                  cx="148.41"
+                  cy="207.18"
+                  r="17.3"
+                />
+                <path
+                  class="cls-bgSvg119 likes1"
+                  d="M146.32,190a17.3,17.3,0,1,0,19.26,15.08A17.29,17.29,0,0,0,146.32,190Zm-1.11,25.17a.49.49,0,0,1-.43.54l-3.87.47a.48.48,0,0,1-.54-.42l-1.12-9.19a.5.5,0,0,1,.43-.55l3.87-.47a.49.49,0,0,1,.54.43h0Zm12.18-8.85a1.46,1.46,0,0,1-1.28,1.63v0a1.22,1.22,0,0,1,.28,2.37l.07.5a1,1,0,0,1,.23,1.94L147,214a.5.5,0,0,1-.55-.43l-.94-7.74c-.29-2.42,3.17-6.27,3.17-6.27l-.15-1.18a1.48,1.48,0,0,1,2.85-.7l0,.07a7.39,7.39,0,0,1-.58,5l3-.37.13,0,1.45-.17a3.26,3.26,0,0,0,2,4.17Z"
+                />
+                <circle
+                  class="cls-bgSvg12 likes2"
+                  cx="161.47"
+                  cy="104.51"
+                  r="24.22"
+                />
+                <path
+                  class="cls-bgSvg119 likes2"
+                  d="M158.55,80.46a24.22,24.22,0,1,0,27,21.12h0A24.23,24.23,0,0,0,158.55,80.46ZM157,115.71a.7.7,0,0,1-.6.76l-5.42.66a.7.7,0,0,1-.76-.6l-1.56-12.87a.68.68,0,0,1,.59-.76l5.42-.66a.69.69,0,0,1,.76.6Zm17.05-12.39a2.06,2.06,0,0,1-1.79,2.28v0a1.7,1.7,0,0,1,.4,3.31l.09.71a1.37,1.37,0,0,1,.33,2.71L159.54,114a.68.68,0,0,1-.76-.59l-1.32-10.84c-.41-3.39,4.43-8.79,4.43-8.79l-.2-1.65a2.06,2.06,0,0,1,4-1,1,1,0,0,1,0,.1c1.09,3.3-.82,7-.82,7l4.17-.51.18,0,2-.25a2.05,2.05,0,0,1,.5,4.07,2,2,0,0,1,2.28,1.78Z"
+                />
+                <path
+                  class="cls-bgSvg120 loveRight"
+                  d="M186.37,242.09a1.26,1.26,0,0,1-1.71.21l-.73-.51c-6-4.28-9.48-7.11-10-11.11-.4-3.26,1.36-6,4.59-6.42a6.22,6.22,0,0,1,5,1.63,6.24,6.24,0,0,1,4.43-2.78c3.24-.39,5.6,1.87,6,5.14.49,4-2.23,7.57-7,13.17Z"
+                />
+                <path
+                  class="cls-bgSvg120 loveLeft"
+                  d="M138.76,178.49a2.42,2.42,0,0,1-3.28.4l-1.4-1c-11.46-8.21-18.15-13.63-19.09-21.29-.76-6.24,2.61-11.55,8.81-12.31a12,12,0,0,1,9.52,3.13,11.92,11.92,0,0,1,8.49-5.32c6.2-.75,10.73,3.58,11.5,9.84.93,7.65-4.28,14.51-13.43,25.24Z"
+                />
+                <path
+                  class="cls-bgSvg120 loveZoom"
+                  d="M127.37,71.29a3.13,3.13,0,0,1-4.26.52l-1.81-1.28C106.42,59.88,97.72,52.84,96.5,42.89c-1-8.11,3.39-15,11.44-16A15.51,15.51,0,0,1,120.31,31a15.47,15.47,0,0,1,11-6.91c8.06-1,13.95,4.64,14.94,12.78,1.21,9.92-5.55,18.84-17.44,32.78Z"
+                />
+                <!-- icon message1 -->
+                <path
+                  class="cls-bgSvg12 animateMessageIcon"
+                  d="M68.65,296.1l-.07,0A54.16,54.16,0,1,1,103,275.2l12.75,10.26-.51.32C107,291,97.07,287.4,93,285.43A54.06,54.06,0,0,1,68.65,296.1Zm-17.72-106a53.28,53.28,0,1,0,41.7,94.43l.21-.16.25.12c3.74,1.82,13.18,5.48,21.15.83l-12.46-10L102,275a53.28,53.28,0,0,0-51.11-84.86Z"
+                />
+                <path
+                  class="cls-bgSvg12 animateMessageIcon"
+                  d="M74.77,231.21c-11,1.71-22,3.34-33,5l-11,1.69c-3.16.5-4-4.4-.82-4.89,11-1.71,22-3.34,33-5q5.49-.84,11-1.7C77.11,225.82,77.93,230.72,74.77,231.21Z"
+                />
+                <path
+                  class="cls-bgSvg12 animateMessageIcon"
+                  d="M88.68,240.63,44.3,247.55l-12.62,2c-3.15.49-4-4.4-.81-4.89l44.37-6.92,12.62-2C91,235.25,91.84,240.14,88.68,240.63Z"
+                />
+                <path
+                  class="cls-bgSvg12 animateMessageIcon"
+                  d="M90.58,252.06,46.2,259l-12.62,2c-3.15.49-4-4.41-.81-4.9l44.37-6.92,12.63-2C92.92,246.67,93.74,251.56,90.58,252.06Z"
+                />
+              </svg>
+            </div>
+          </div>
+          <!-- content1-right -->
+          <div class="content1-right">
+            <div>
+              <h3>
+                Portofolio projek-projek yang pernah dikembangkan oleh
+                pengembang website hingga saat ini. Projek ini dapat digunakan
+                dan dimanfaatkan secara umum.
+              </h3>
+              <h4></h4>
+            </div>
+          </div>
+        </div>
+        <!-- background2 -->
+        <div class="background2">
+          <!-- cls-bgSvg2 -->
+          <svg
+            id="Layer_1"
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 688 768"
+          >
+            <defs>
+              <style>
+                .cls-bgSvg2-1 {
+                  fill: url(#linear-gradient-bgSvg2);
+                }
+                .cls-bgSvg2-2 {
+                  fill: url(#linear-gradient-bgSvg2-2);
+                }
+              </style>
+              <linearGradient
+                id="linear-gradient-bgSvg2"
+                x1="192.42"
+                y1="420.29"
+                x2="692.03"
+                y2="420.29"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop offset="0" stop-color="#2d6599" />
+                <stop offset="0.03" stop-color="#2a6f9f" />
+                <stop offset="0.14" stop-color="#1f8fb2" />
+                <stop offset="0.26" stop-color="#17aac1" />
+                <stop offset="0.39" stop-color="#10becd" />
+                <stop offset="0.54" stop-color="#0ccdd6" />
+                <stop offset="0.71" stop-color="#09d5da" />
+                <stop offset="1" stop-color="#08d8dc" />
+              </linearGradient>
+              <linearGradient
+                id="linear-gradient-bgSvg2-2"
+                x1="235"
+                y1="399.09"
+                x2="693"
+                y2="399.09"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop offset="0" stop-color="#93f1ff" />
+                <stop offset="0.02" stop-color="#96f1ff" />
+                <stop offset="0.18" stop-color="#a1f1ff" />
+                <stop offset="0.4" stop-color="#a8f1ff" />
+                <stop offset="1" stop-color="#aaf1ff" />
+              </linearGradient>
+            </defs>
+            <path
+              class="cls-bgSvg2-1 bganimationUp1"
+              d="M692,729c-36.16,5-90.48,6.66-140-22-61.11-35.37-52.37-80.65-108-115-83.48-51.55-159,16-216-36-38.26-34.88-42.26-99.93-28-146,2.84-9.17,23.13-71.54,78-92,48.46-18.07,73.11,17.21,108,0,58.67-28.94,27.74-138,85-187,27.83-23.82,85.1-40,218,13q1.65,145.64,2.41,291.29Q692.16,582.16,692,729Z"
+            />
+            <path
+              class="cls-bgSvg2-2 bganimationUp2"
+              d="M693,630c-27.21,9.57-66.35,18-102.78,2-42.84-18.88-41.14-53.71-91.8-86-41.14-26.22-85.46-30.78-116.74-34-67.89-7-96.3,10.49-122.73-13-23.49-20.88-24-55.08-23.95-62,.33-37.55,24.83-63.06,30.93-69,58.11-56.57,145.27,8.92,203.56-37,57.61-45.38,16.9-144.32,62.86-169,21.17-11.37,63.85-8.67,160.65,77q-1,36-2,72Q692,470.5,693,630Z"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <!-- projectList -->
+      <div class="projectList" id="project">
+        <div class="projectlist-core">
+          <div>
+            <h2>Projek yang pernah saya kerjakan</h2>
+          </div>
+          <div class="project">
+            <!-- card -->
+            <div class="card">
+              <img src="/img/valentine-card.jpg" alt="" />
+              <h4>Valentine Card</h4>
+              <h5>Dibuat : 13 Februari 2021</h5>
+              <p>Bagikan kartu ucapan kepada seseorang yang spesial bagimu</p>
+              <a href="/projeck/valentineDayCard/index.html">Selengkapnya</a>
+            </div>
+            <!-- card -->
+            <div class="card">
+              <img src="/img/pomodoro.jpg" alt="" />
+              <h4>Pomodoro</h4>
+              <h5>Dibuat : 19 Juli 2020</h5>
+              <p>
+                POMODORO adalah sebuah konsep dalam memanajemen waktu bekerja
+                dalam suatu interval waktu tertentu dan juga waktu istirahat
+                dalam waktu tertentu.
+              </p>
+              <a href="/projeck/pomodoro/index.html">Selengkapnya</a>
+            </div>
+            <!-- card -->
+            <div class="card">
+              <img src="/img/gameCegahCorona.jpg" alt="" />
+              <h4>Game Cegah Corona</h4>
+              <h5>Dibuat : 5 Agustus 2020</h5>
+              <p>
+                Cegah Corona Game ini bertujuan untuk menghibur sekaligus
+                sebagai edukasi mengenai covid-19.
+              </p>
+              <a href="/projeck/gameCegahCorona/index.html">Selengkapnya</a>
+            </div>
+            <!-- card -->
+            <div class="card">
+              <img src="/img/img-test.jpg" alt="" />
+              <h4>Segera</h4>
+              <h5>Dibuat : .....</h5>
+              <a href="/">Segera...</a>
+            </div>
+          </div>
+        </div>
+        <!-- cls-bgSvg3 -->
+        <div class="background3">
+          <svg
+            id="Layer_1"
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 688 768"
+          >
+            <defs>
+              <style>
+                .cls-bgSvg3-1 {
+                  fill: url(#linear-gradient-bgSvg3);
+                }
+                .cls-bgSvg3-2 {
+                  fill: url(#linear-gradient-bgSvg3-2);
+                }
+              </style>
+              <linearGradient
+                id="linear-gradient-bgSvg3"
+                x1="-14.36"
+                y1="387.88"
+                x2="484.86"
+                y2="387.88"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop offset="0" stop-color="#2159bd" />
+                <stop offset="0.03" stop-color="#1f64c0" />
+                <stop offset="0.13" stop-color="#1882c9" />
+                <stop offset="0.24" stop-color="#129bd0" />
+                <stop offset="0.36" stop-color="#0dafd5" />
+                <stop offset="0.5" stop-color="#0abdd9" />
+                <stop offset="0.68" stop-color="#09c5db" />
+                <stop offset="1" stop-color="#08c7dc" />
+              </linearGradient>
+              <linearGradient
+                id="linear-gradient-bgSvg3-2"
+                x1="573.35"
+                y1="473.56"
+                x2="901.68"
+                y2="473.56"
+                gradientTransform="matrix(-1.15, 0.01, -0.01, -1, 1027.05, 834.63)"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop offset="0" stop-color="#93f1ff" />
+                <stop offset="0.02" stop-color="#96f1ff" />
+                <stop offset="0.18" stop-color="#a1f1ff" />
+                <stop offset="0.4" stop-color="#a8f1ff" />
+                <stop offset="1" stop-color="#aaf1ff" />
+              </linearGradient>
+            </defs>
+            <path
+              class="cls-bgSvg3-1 bganimationUp1"
+              d="M-11.73,52.74C9.5,46.62,84.43,27.88,158.73,67.23c14.71,7.79,91.14,48.26,89.87,102.05-1.34,56.72-87.95,79-82.91,139.73.3,3.62,2.62,31.67,21.45,42.33C223,371.61,269.3,301,355.28,294.51c11.26-.84,70.69-5.31,102.05,26.1,70.2,70.31-1.58,319.22-128.14,357.74-104.94,31.93-204.54-93.87-284.1-45.23C10.84,654.06-2.3,696.69-7.79,732.86q-4.94-156.27-6.16-312.58Q-15.4,236.53-11.73,52.74Z"
+            />
+            <path
+              class="cls-bgSvg3-2 bganimationUp2"
+              d="M-16.37,152.46C25,109.09,87,99.73,130.32,126.37c31.44,19.33,57.13,60.15,49.86,94.51-6.8,32.14-38.39,39.54-45.22,80.59-1,5.69-4.77,28.66,4.63,47.55,27.52,55.25,135.65,10.22,191.92,68.41,37.79,39.09,43,115.25,9.86,161.19-34.75,48.15-102,49.77-111.33,49.86C137.31,629.37,93.9,547.21,38.13,567c-17,6-35.44,21.66-49.86,59.14q-2.55-98.35-3.78-196.73Q-17.25,291-16.37,152.46Z"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <!-- content2 -->
+      <div class="content2" id="aboutMe">
+        <div class="content2-left">
+          <h2>Tentang Saya</h2>
+          <h4>Halo, salam kenal</h4>
+          <h4>Nama saya disan Saya seorang pelajar</h4>
+        </div>
+        <div class="content2-right">
+          <img src="/img/Blog2.jpg" alt="profile" />
+          <div class="box"></div>
+        </div>
+      </div>
+
+      <!-- cls-bgSvg4 -->
+      <div class="background4">
+        <svg
+          id="Layer_1"
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 0 688 768"
+        >
+          <defs>
+            <style>
+              .cls-bgSvg4-1 {
+                fill: url(#linear-gradient-bgSvg4);
+              }
+              .cls-bgSvg4-2 {
+                fill: url(#linear-gradient-bgSvg4-2);
+              }
+            </style>
+            <linearGradient
+              id="linear-gradient-bgSvg4"
+              x1="-712.91"
+              y1="-7415.87"
+              x2="-186.27"
+              y2="-7415.87"
+              gradientTransform="matrix(1.15, -0.01, 0.01, 1, 1016.59, 7814.11)"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop offset="0" stop-color="#2d6599" />
+              <stop offset="0.03" stop-color="#2a6f9f" />
+              <stop offset="0.14" stop-color="#1f8fb2" />
+              <stop offset="0.26" stop-color="#17aac1" />
+              <stop offset="0.39" stop-color="#10becd" />
+              <stop offset="0.54" stop-color="#0ccdd6" />
+              <stop offset="0.71" stop-color="#09d5da" />
+              <stop offset="1" stop-color="#08d8dc" />
+            </linearGradient>
+            <linearGradient
+              id="linear-gradient-bgSvg4-2"
+              x1="-674.28"
+              y1="-7421.31"
+              x2="-189.88"
+              y2="-7421.31"
+              gradientTransform="matrix(1.15, -0.01, 0.01, 1, 1016.59, 7814.11)"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop offset="0" stop-color="#93f1ff" />
+              <stop offset="0.02" stop-color="#96f1ff" />
+              <stop offset="0.18" stop-color="#a1f1ff" />
+              <stop offset="0.4" stop-color="#a8f1ff" />
+              <stop offset="1" stop-color="#aaf1ff" />
+            </linearGradient>
+          </defs>
+          <path
+            class="cls-bgSvg4-1 bganimationUp1"
+            d="M715.58,736.2c-62.32,12.45-135.13,16-175.3-25.44-46.87-48.34-8.95-116.28-49.65-151.47-67.89-58.73-220,90.09-318.08,28.7-56.77-35.52-71.45-126.4-64.77-186.14,3.37-30.18,8.64-77.29,43.09-107.93,83.21-74,244.83,29.69,290-28.71,32.06-41.46-35.76-111.46-6.57-162.41,32.19-56.2,157.85-46.45,274.28-24.45q-4,171.54-1.95,343Q708.51,578.82,715.58,736.2Z"
+          />
+          <path
+            class="cls-bgSvg4-2 bganimationUp2"
+            d="M711,627.25c-32.26,24.26-74.73,47.56-112.61,35.14-61-20-43.73-110.81-107.79-143.52-63.56-32.46-127.7,32.86-243.69,9.37-17-3.44-44-10.55-66.23-33.14-5.56-5.66-29.89-30.2-30-65.22-.08-39.71,29.44-67.05,36.79-73.42,70-60.68,177,7.29,247.44-42.13,69.59-48.84,18.74-152.87,74.41-179.65C535,122.35,587,124.57,706,213.75q-.75,38.08-1.51,76.17Z"
+          />
+        </svg>
+      </div>
+      <!-- content3 -->
+      <div class="content3">
+        <div class="content3-title">
+          <h2>Teknologi yang saya sedang pelajari</h2>
+          <h4>Web Development : Html dan Css</h4>
+        </div>
+
+        <div class="content3-card">
+          <!-- card -->
+          <div class="card">
+            <img src="/img/js.png" alt="" />
+            <h5>Javascript</h5>
+            <p>fronted website dan fitur Ajax</p>
+          </div>
+          <!-- card -->
+          <div class="card">
+            <img src="/img/codeigniter.png" alt="" />
+            <h5>Codeigneter</h5>
+            <p>Ringan sebagai backend untuk sebuah website</p>
+          </div>
+          <!-- card -->
+          <div class="card">
+            <img src="/img/laravel.png" alt="" />
+            <h5>Laravel</h5>
+            <p>Powerfull untuk sebuah projek besar</p>
+          </div>
+          <!-- card -->
+          <div class="card">
+            <img src="/img/react.png" alt="" />
+            <h5>React</h5>
+            <p>Pengembangan website dan mobile</p>
+          </div>
+          <!-- card -->
+          <div class="card">
+            <img src="/img/bootstrap.png" alt="" />
+            <h5>Bootstrap</h5>
+            <p>Framework UI/UX untuk sebuah website responsive</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- content4 -->
+      <div class="content4" id="contactMe">
+        <div class="content4-core">
+          <div class="content4-left">
+            <div class="content4-left-top">
+              <h2>Ada pertanyaan? diskusi?</h2>
+              <h3>Jangan sungkan hubungi saya :)</h3>
+            </div>
+            <div class="content4-left-bottom">
+              <p>email : playeruser103@gmail.com</p>
+              <p>instagram : adisan_103</p>
+            </div>
+          </div>
+          <div class="content4-right">
+            <svg
+              version="1.1"
+              id="e6c7a302-1d79-4c46-b758-a00a31f9e26b"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 867.2 752.7"
+              style="enable-background: new 0 0 867.2 752.7"
+              xml:space="preserve"
+            >
+              <style type="text/css">
+                .st0 {
+                  opacity: 0.25;
+                  fill: #535461;
+                  enable-background: new;
+                }
+                .st1 {
+                  fill: url(#SVGID_1_);
+                }
+                .st2 {
+                  fill: #ffffff;
+                }
+                .st3 {
+                  opacity: 0.6;
+                }
+                .st4 {
+                  fill: url(#SVGID_2_);
+                }
+                .st5 {
+                  fill: url(#SVGID_3_);
+                }
+                .st6 {
+                  fill: #47e6b1;
+                }
+                .st7 {
+                  fill: url(#SVGID_4_);
+                }
+                .st8 {
+                  fill: #f55f44;
+                }
+                .st9 {
+                  fill: url(#SVGID_5_);
+                }
+                .st10 {
+                  fill: url(#SVGID_6_);
+                }
+                .st11 {
+                  fill: url(#SVGID_7_);
+                }
+                .st12 {
+                  fill: url(#SVGID_8_);
+                }
+                .st13 {
+                  fill: url(#SVGID_9_);
+                }
+                .st14 {
+                  fill: url(#SVGID_10_);
+                }
+                .st15 {
+                  fill: url(#SVGID_11_);
+                }
+                .st16 {
+                  fill: url(#SVGID_12_);
+                }
+                .st17 {
+                  fill: none;
+                  stroke: url(#SVGID_13_);
+                  stroke-width: 2;
+                  stroke-miterlimit: 10;
+                }
+                .st18 {
+                  fill: none;
+                  stroke: #535461;
+                  stroke-width: 2;
+                  stroke-miterlimit: 10;
+                }
+                .st19 {
+                  fill: none;
+                  stroke: url(#SVGID_14_);
+                  stroke-width: 2;
+                  stroke-miterlimit: 10;
+                }
+                .st20 {
+                  fill: none;
+                  stroke: url(#SVGID_15_);
+                  stroke-width: 2;
+                  stroke-miterlimit: 10;
+                }
+                .st21 {
+                  opacity: 0.7;
+                }
+                .st22 {
+                  fill: url(#SVGID_16_);
+                }
+                .st23 {
+                  fill: #535461;
+                }
+                .st24 {
+                  opacity: 0.1;
+                  fill: #ffffff;
+                  enable-background: new;
+                }
+                .st25 {
+                  fill: #4d8af0;
+                }
+                .st26 {
+                  fill: #3ad29f;
+                }
+                .st27 {
+                  fill: url(#SVGID_17_);
+                }
+                .st28 {
+                  fill: #eeeeee;
+                }
+              </style>
+              <polygon
+                class="st0"
+                points="867.2,225 862.3,225 862.3,220.1 860.3,220.1 860.3,225 855.5,225 855.5,227 860.3,227 860.3,231.8 
+    862.3,231.8 862.3,227 867.2,227 "
+              />
+              <g>
+                <linearGradient
+                  id="SVGID_1_"
+                  gradientUnits="userSpaceOnUse"
+                  x1="-556.2972"
+                  y1="58.7361"
+                  x2="-556.2972"
+                  y2="123.1161"
+                  gradientTransform="matrix(-0.9583 0.2857 -0.2857 -0.9583 -49.8593 745.3904)"
+                >
+                  <stop
+                    offset="0"
+                    style="stop-color: #808080; stop-opacity: 0.25"
+                  />
+                  <stop
+                    offset="0.54"
+                    style="stop-color: #808080; stop-opacity: 0.12"
+                  />
+                  <stop
+                    offset="1"
+                    style="stop-color: #808080; stop-opacity: 0.1"
+                  />
+                </linearGradient>
+                <polygon
+                  class="st1 FalllingFromLeft1"
+                  points="397.9,483.4 498.3,453.5 516.7,515.2 416.3,545.1 	"
+                />
+
+                <rect
+                  x="406"
+                  y="468.9"
+                  transform="matrix(0.9583 -0.2857 0.2857 0.9583 -123.5083 151.2532)"
+                  class="st2 FalllingFromLeft1"
+                  width="101.2"
+                  height="60.1"
+                />
+                <g class="st3 FalllingFromLeft1">
+                  <rect
+                    x="406.2"
+                    y="485.6"
+                    transform="matrix(0.9583 -0.2857 0.2857 0.9583 -122.8879 138.3312)"
+                    class="st2"
+                    width="12.9"
+                    height="9.5"
+                  />
+
+                  <rect
+                    x="421.8"
+                    y="501.4"
+                    transform="matrix(0.9583 -0.2857 0.2857 0.9583 -125.079 148.5298)"
+                    class="st2"
+                    width="49.4"
+                    height="3.1"
+                  />
+
+                  <rect
+                    x="437"
+                    y="506.9"
+                    transform="matrix(0.9583 -0.2857 0.2857 0.9583 -126.1523 151.1609)"
+                    class="st2"
+                    width="36"
+                    height="2.1"
+                  />
+                </g>
+
+                <linearGradient
+                  id="SVGID_2_"
+                  gradientUnits="userSpaceOnUse"
+                  x1="-1544.0582"
+                  y1="552.9919"
+                  x2="-1544.0582"
+                  y2="617.3719"
+                  gradientTransform="matrix(-0.9816 -0.1912 0.1912 -0.9816 -927.454 628.0995)"
+                >
+                  <stop
+                    offset="0"
+                    style="stop-color: #808080; stop-opacity: 0.25"
+                  />
+                  <stop
+                    offset="0.54"
+                    style="stop-color: #808080; stop-opacity: 0.12"
+                  />
+                  <stop
+                    offset="1"
+                    style="stop-color: #808080; stop-opacity: 0.1"
+                  />
+                </linearGradient>
+                <polygon
+                  class="st4 FalllingFromRight2"
+                  points="642.4,370.4 654.7,307.2 757.6,327.3 745.3,390.5 	"
+                />
+                <g class="FalllingFromRight2">
+                  <rect
+                    x="668"
+                    y="298.6"
+                    transform="matrix(0.1903 -0.9817 0.9817 0.1903 222.3992 967.838)"
+                    class="st2"
+                    width="60"
+                    height="101"
+                  />
+                </g>
+                <g class="st3 FalllingFromRight2">
+                  <rect
+                    x="659.8"
+                    y="313.9"
+                    transform="matrix(0.1912 -0.9816 0.9816 0.1912 223.0908 911.3418)"
+                    class="st2"
+                    width="9.5"
+                    height="12.9"
+                  />
+
+                  <rect
+                    x="687.1"
+                    y="322.5"
+                    transform="matrix(0.1912 -0.9816 0.9816 0.1912 216.252 956.7811)"
+                    class="st2"
+                    width="3.1"
+                    height="49.4"
+                  />
+
+                  <rect
+                    x="692.8"
+                    y="337.5"
+                    transform="matrix(0.1912 -0.9816 0.9816 0.1912 212.2446 968.6498)"
+                    class="st2"
+                    width="2.1"
+                    height="36"
+                  />
+                </g>
+
+                <linearGradient
+                  id="SVGID_3_"
+                  gradientUnits="userSpaceOnUse"
+                  x1="-2468.8958"
+                  y1="1760.4083"
+                  x2="-2468.8958"
+                  y2="1824.7883"
+                  gradientTransform="matrix(-0.3979 -0.9174 0.9174 -0.3979 -1917.0465 -1058.752)"
+                >
+                  <stop
+                    offset="0"
+                    style="stop-color: #808080; stop-opacity: 0.25"
+                  />
+                  <stop
+                    offset="0.54"
+                    style="stop-color: #808080; stop-opacity: 0.12"
+                  />
+                  <stop
+                    offset="1"
+                    style="stop-color: #808080; stop-opacity: 0.1"
+                  />
+                </linearGradient>
+                <polygon
+                  class="st5 FalllingFromRight2"
+                  points="659.6,457.6 718.7,432 760.4,528.1 701.3,553.7 	"
+                />
+                <g class="FalllingFromRight2">
+                  <rect
+                    x="680.3"
+                    y="441.6"
+                    transform="matrix(0.9174 -0.3979 0.3979 0.9174 -137.2087 323.314)"
+                    class="st2"
+                    width="60.1"
+                    height="101.2"
+                  />
+                </g>
+
+                <g class="st3 FalllingFromRight2">
+                  <rect
+                    x="708.7"
+                    y="441"
+                    transform="matrix(0.9174 -0.3979 0.3979 0.9174 -119.152 320.8665)"
+                    class="st6"
+                    width="9.5"
+                    height="12.9"
+                  />
+
+                  <rect
+                    x="703.4"
+                    y="457.9"
+                    transform="matrix(0.9174 -0.3979 0.3979 0.9174 -133.8295 320.3919)"
+                    class="st6"
+                    width="3.1"
+                    height="49.4"
+                  />
+
+                  <rect
+                    x="700"
+                    y="473.6"
+                    transform="matrix(0.9174 -0.3979 0.3979 0.9174 -137.7443 319.5611)"
+                    class="st6"
+                    width="2.1"
+                    height="36"
+                  />
+                </g>
+
+                <linearGradient
+                  id="SVGID_6_"
+                  gradientUnits="userSpaceOnUse"
+                  x1="-2164.0256"
+                  y1="1820.1683"
+                  x2="-2164.0256"
+                  y2="1884.5483"
+                  gradientTransform="matrix(-0.3979 -0.9174 0.9174 -0.3979 -1917.042 -1058.7465)"
+                >
+                  <stop
+                    offset="0"
+                    style="stop-color: #808080; stop-opacity: 0.25"
+                  />
+                  <stop
+                    offset="0.54"
+                    style="stop-color: #808080; stop-opacity: 0.12"
+                  />
+                  <stop
+                    offset="1"
+                    style="stop-color: #808080; stop-opacity: 0.1"
+                  />
+                </linearGradient>
+                <polygon
+                  class="st10 FalllingFromRight3"
+                  points="593.1,154.2 652.2,128.5 693.9,224.6 634.8,250.3 	"
+                />
+
+                <g class="FalllingFromRight3">
+                  <rect
+                    x="613.8"
+                    y="138.1"
+                    transform="matrix(0.9174 -0.3979 0.3979 0.9174 -21.9343 271.7921)"
+                    class="st2"
+                    width="60.1"
+                    height="101.2"
+                  />
+                </g>
+                <g class="st3 FalllingFromRight3">
+                  <rect
+                    x="642.2"
+                    y="137.6"
+                    transform="matrix(0.9174 -0.3979 0.3979 0.9174 -3.8791 269.3469)"
+                    class="st6"
+                    width="9.5"
+                    height="12.9"
+                  />
+
+                  <rect
+                    x="636.9"
+                    y="154.4"
+                    transform="matrix(0.9174 -0.3979 0.3979 0.9174 -18.5576 268.8684)"
+                    class="st6"
+                    width="3.1"
+                    height="49.4"
+                  />
+
+                  <rect
+                    x="633.5"
+                    y="170.1"
+                    transform="matrix(0.9174 -0.3979 0.3979 0.9174 -22.4756 268.0399)"
+                    class="st6"
+                    width="2.1"
+                    height="36"
+                  />
+                </g>
+
+                <linearGradient
+                  id="SVGID_7_"
+                  gradientUnits="userSpaceOnUse"
+                  x1="-243.7671"
+                  y1="230.2561"
+                  x2="-243.7671"
+                  y2="294.6361"
+                  gradientTransform="matrix(-0.9583 0.2857 -0.2857 -0.9583 -49.8623 745.3793)"
+                >
+                  <stop
+                    offset="0"
+                    style="stop-color: #808080; stop-opacity: 0.25"
+                  />
+                  <stop
+                    offset="0.54"
+                    style="stop-color: #808080; stop-opacity: 0.12"
+                  />
+                  <stop
+                    offset="1"
+                    style="stop-color: #808080; stop-opacity: 0.1"
+                  />
+                </linearGradient>
+                <polygon
+                  class="st11 FalllingFromRight2"
+                  points="49.4,408.3 149.8,378.4 168.2,440.1 67.8,470 	"
+                />
+
+                <rect
+                  x="57.5"
+                  y="393.8"
+                  transform="matrix(0.9583 -0.2857 0.2857 0.9583 -116.5807 48.5615)"
+                  class="st2 FalllingFromRight2"
+                  width="101.2"
+                  height="60.1"
+                />
+                <g class="st3 FalllingFromRight2">
+                  <rect
+                    x="57.7"
+                    y="410.6"
+                    transform="matrix(0.9583 -0.2857 0.2857 0.9583 -115.9773 35.6394)"
+                    class="st2"
+                    width="12.9"
+                    height="9.5"
+                  />
+
+                  <rect
+                    x="73.3"
+                    y="426.4"
+                    transform="matrix(0.9583 -0.2857 0.2857 0.9583 -118.1672 45.8406)"
+                    class="st2"
+                    width="49.4"
+                    height="3.1"
+                  />
+
+                  <rect
+                    x="88.5"
+                    y="431.9"
+                    transform="matrix(0.9583 -0.2857 0.2857 0.9583 -119.2405 48.4717)"
+                    class="st2"
+                    width="36"
+                    height="2.1"
+                  />
+                </g>
+
+                <linearGradient
+                  id="SVGID_8_"
+                  gradientUnits="userSpaceOnUse"
+                  x1="-1187.6283"
+                  y1="560.0619"
+                  x2="-1187.6283"
+                  y2="624.4419"
+                  gradientTransform="matrix(-0.9816 -0.1912 0.1912 -0.9816 -927.4501 628.1073)"
+                >
+                  <stop
+                    offset="0"
+                    style="stop-color: #808080; stop-opacity: 0.25"
+                  />
+                  <stop
+                    offset="0.54"
+                    style="stop-color: #808080; stop-opacity: 0.12"
+                  />
+                  <stop
+                    offset="1"
+                    style="stop-color: #808080; stop-opacity: 0.1"
+                  />
+                </linearGradient>
+                <polygon
+                  class="st12 FalllingFromLeft3"
+                  points="293.9,295.4 306.2,232.2 409.1,252.2 396.7,315.4 	"
+                />
+                <g class="FalllingFromLeft3">
+                  <rect
+                    x="320"
+                    y="223.1"
+                    transform="matrix(0.1903 -0.9817 0.9817 0.1903 14.7891 565.0683)"
+                    class="st2"
+                    width="60"
+                    height="101"
+                  />
+                </g>
+                <g class="st3 FalllingFromLeft3">
+                  <rect
+                    x="311.2"
+                    y="238.8"
+                    transform="matrix(0.1912 -0.9816 0.9816 0.1912 14.8793 508.5358)"
+                    class="st8"
+                    width="9.5"
+                    height="12.9"
+                  />
+
+                  <rect
+                    x="338.6"
+                    y="247.4"
+                    transform="matrix(0.1912 -0.9816 0.9816 0.1912 8.0466 553.9863)"
+                    class="st8"
+                    width="3.1"
+                    height="49.4"
+                  />
+
+                  <rect
+                    x="344.3"
+                    y="262.5"
+                    transform="matrix(0.1912 -0.9816 0.9816 0.1912 4.0391 565.8551)"
+                    class="st8"
+                    width="2.1"
+                    height="36.1"
+                  />
+                </g>
+
+                <linearGradient
+                  id="SVGID_9_"
+                  gradientUnits="userSpaceOnUse"
+                  x1="-2261.3457"
+                  y1="1470.5483"
+                  x2="-2261.3457"
+                  y2="1534.9283"
+                  gradientTransform="matrix(-0.3979 -0.9174 0.9174 -0.3979 -1917.0422 -1058.754)"
+                >
+                  <stop
+                    offset="0"
+                    style="stop-color: #808080; stop-opacity: 0.25"
+                  />
+                  <stop
+                    offset="0.54"
+                    style="stop-color: #808080; stop-opacity: 0.12"
+                  />
+                  <stop
+                    offset="1"
+                    style="stop-color: #808080; stop-opacity: 0.1"
+                  />
+                </linearGradient>
+                <polygon
+                  class="st13 FalllingFromRight3"
+                  points="311.1,382.6 370.2,356.9 411.9,453.1 352.8,478.7 	"
+                />
+                <g class="FalllingFromRight3">
+                  <rect
+                    x="331.8"
+                    y="366.5"
+                    transform="matrix(0.9174 -0.3979 0.3979 0.9174 -136.1203 178.4288)"
+                    class="st2"
+                    width="60.1"
+                    height="101.2"
+                  />
+                </g>
+                <g class="st3 FalllingFromRight3">
+                  <rect
+                    x="360.2"
+                    y="366"
+                    transform="matrix(0.9174 -0.3979 0.3979 0.9174 -118.066 175.9802)"
+                    class="st6"
+                    width="9.5"
+                    height="12.9"
+                  />
+
+                  <rect
+                    x="354.9"
+                    y="382.8"
+                    transform="matrix(0.9174 -0.3979 0.3979 0.9174 -132.7396 175.5048)"
+                    class="st6"
+                    width="3.1"
+                    height="49.4"
+                  />
+
+                  <rect
+                    x="351.5"
+                    y="398.5"
+                    transform="matrix(0.9174 -0.3979 0.3979 0.9174 -136.6562 174.6757)"
+                    class="st6"
+                    width="2.1"
+                    height="36"
+                  />
+                </g>
+
+                <linearGradient
+                  id="SVGID_10_"
+                  gradientUnits="userSpaceOnUse"
+                  x1="-306.8671"
+                  y1="400.5561"
+                  x2="-306.8671"
+                  y2="464.9361"
+                  gradientTransform="matrix(-0.9583 0.2857 -0.2857 -0.9583 -49.8668 745.3807)"
+                >
+                  <stop
+                    offset="0"
+                    style="stop-color: #808080; stop-opacity: 0.25"
+                  />
+                  <stop
+                    offset="0.54"
+                    style="stop-color: #808080; stop-opacity: 0.12"
+                  />
+                  <stop
+                    offset="1"
+                    style="stop-color: #808080; stop-opacity: 0.1"
+                  />
+                </linearGradient>
+                <polygon
+                  class="st14 FalllingFromLeft2"
+                  points="61.2,227.1 161.6,197.2 180,258.9 79.6,288.8 	"
+                />
+
+                <rect
+                  x="71"
+                  y="211.8"
+                  transform="matrix(0.9573 -0.2892 0.2892 0.9573 -64.753 45.557)"
+                  class="st2 FalllingFromLeft2"
+                  width="101.5"
+                  height="60.3"
+                />
+                <g class="st3 FalllingFromLeft2">
+                  <rect
+                    x="69.5"
+                    y="229.3"
+                    transform="matrix(0.9583 -0.2857 0.2857 0.9583 -63.7124 31.4529)"
+                    class="st2"
+                    width="12.9"
+                    height="9.5"
+                  />
+
+                  <rect
+                    x="85.1"
+                    y="245.2"
+                    transform="matrix(0.9583 -0.2857 0.2857 0.9583 -65.9035 41.6515)"
+                    class="st2"
+                    width="49.4"
+                    height="3.1"
+                  />
+
+                  <rect
+                    x="100.3"
+                    y="250.7"
+                    transform="matrix(0.9583 -0.2857 0.2857 0.9583 -66.9769 44.2826)"
+                    class="st2"
+                    width="36"
+                    height="2.1"
+                  />
+                </g>
+
+                <linearGradient
+                  id="SVGID_11_"
+                  gradientUnits="userSpaceOnUse"
+                  x1="-1164.7601"
+                  y1="736.8839"
+                  x2="-1164.7601"
+                  y2="801.2639"
+                  gradientTransform="matrix(-0.98 -0.19 0.19 -0.98 -925.184 625.5916)"
+                >
+                  <stop
+                    offset="0"
+                    style="stop-color: #808080; stop-opacity: 0.25"
+                  />
+                  <stop
+                    offset="0.54"
+                    style="stop-color: #808080; stop-opacity: 0.12"
+                  />
+                  <stop
+                    offset="1"
+                    style="stop-color: #808080; stop-opacity: 0.1"
+                  />
+                </linearGradient>
+                <polygon
+                  class="st15 FalllingFromLeft3"
+                  points="305,114.8 317.2,51.7 419.9,71.6 407.6,134.7 	"
+                />
+                <g class="FalllingFromLeft3">
+                  <rect
+                    x="332.9"
+                    y="41.3"
+                    transform="matrix(0.1912 -0.9816 0.9816 0.1912 203.287 430.5885)"
+                    class="st2"
+                    width="60.1"
+                    height="101.2"
+                  />
+                </g>
+                <g class="st3 FalllingFromLeft3">
+                  <rect
+                    x="323"
+                    y="57.6"
+                    transform="matrix(0.1912 -0.9816 0.9816 0.1912 202.3017 373.5473)"
+                    class="st2"
+                    width="9.5"
+                    height="12.9"
+                  />
+
+                  <rect
+                    x="350.4"
+                    y="66.2"
+                    transform="matrix(0.1912 -0.9816 0.9816 0.1912 195.4741 418.9804)"
+                    class="st2"
+                    width="3.1"
+                    height="49.4"
+                  />
+
+                  <rect
+                    x="356.1"
+                    y="81.2"
+                    transform="matrix(0.1912 -0.9816 0.9816 0.1912 191.4585 430.8395)"
+                    class="st8"
+                    width="2.1"
+                    height="36.1"
+                  />
+                </g>
+
+                <linearGradient
+                  id="SVGID_12_"
+                  gradientUnits="userSpaceOnUse"
+                  x1="-2099.7856"
+                  y1="1553.4884"
+                  x2="-2099.7856"
+                  y2="1617.8684"
+                  gradientTransform="matrix(-0.3979 -0.9174 0.9174 -0.3979 -1917.0403 -1058.7502)"
+                >
+                  <stop
+                    offset="0"
+                    style="stop-color: #808080; stop-opacity: 0.25"
+                  />
+                  <stop
+                    offset="0.54"
+                    style="stop-color: #808080; stop-opacity: 0.12"
+                  />
+                  <stop
+                    offset="1"
+                    style="stop-color: #808080; stop-opacity: 0.1"
+                  />
+                </linearGradient>
+                <polygon
+                  class="st16"
+                  points="322.9,201.3 382,175.7 423.7,271.8 364.6,297.5 	"
+                />
+
+                <rect
+                  x="343.5"
+                  y="185.3"
+                  transform="matrix(0.9174 -0.3979 0.3979 0.9174 -63.0325 168.1537)"
+                  class="st2"
+                  width="60.1"
+                  height="101.2"
+                />
+                <g class="st3">
+                  <rect
+                    x="372"
+                    y="184.8"
+                    transform="matrix(0.9174 -0.3979 0.3979 0.9174 -44.9746 165.7108)"
+                    class="st6"
+                    width="9.5"
+                    height="12.9"
+                  />
+
+                  <rect
+                    x="366.7"
+                    y="201.6"
+                    transform="matrix(0.9174 -0.3979 0.3979 0.9174 -59.6531 165.2323)"
+                    class="st6"
+                    width="3.1"
+                    height="49.4"
+                  />
+
+                  <rect
+                    x="363.3"
+                    y="217.3"
+                    transform="matrix(0.9174 -0.3979 0.3979 0.9174 -63.5615 164.404)"
+                    class="st6"
+                    width="2.1"
+                    height="36"
+                  />
+                </g>
+                <circle class="st0" cx="63.9" cy="61.3" r="5.5" />
+                <circle class="st0" cx="635" cy="540.4" r="5.5" />
+                <circle class="st0" cx="151.8" cy="513.2" r="5.5" />
+                <circle class="st0" cx="685.8" cy="437" r="5.5" />
+                <circle class="st0" cx="737.3" cy="186.1" r="5.5" />
+                <polygon
+                  class="st0"
+                  points="333.4,4.9 328.6,4.9 328.6,0 326.6,0 326.6,4.9 321.7,4.9 321.7,6.8 326.6,6.8 326.6,11.7 328.6,11.7 
+      328.6,6.8 333.4,6.8 	"
+                />
+                <polygon
+                  class="st0"
+                  points="146.3,79.4 141.4,79.4 141.4,74.5 139.4,74.5 139.4,79.4 134.6,79.4 134.6,81.4 139.4,81.4 
+      139.4,86.3 141.4,86.3 141.4,81.4 146.3,81.4 	"
+                />
+                <polygon
+                  class="st0"
+                  points="70.2,357.1 65.3,357.1 65.3,352.3 63.3,352.3 63.3,357.1 58.5,357.1 58.5,359.1 63.3,359.1 63.3,364 
+      65.3,364 65.3,359.1 70.2,359.1 	"
+                />
+                <polygon
+                  class="st0"
+                  points="59.2,159.1 54.4,159.1 54.4,154.2 52.4,154.2 52.4,159.1 47.5,159.1 47.5,161.1 52.4,161.1 
+      52.4,165.9 54.4,165.9 54.4,161.1 59.2,161.1 	"
+                />
+                <polygon
+                  class="st0"
+                  points="11.7,295.2 6.8,295.2 6.8,290.3 4.9,290.3 4.9,295.2 0,295.2 0,297.1 4.9,297.1 4.9,302 6.8,302 
+      6.8,297.1 11.7,297.1 	"
+                />
+                <polygon
+                  class="st0"
+                  points="697.8,288.3 692.9,288.3 692.9,283.4 690.9,283.4 690.9,288.3 686,288.3 686,290.2 690.9,290.2 
+      690.9,295.1 692.9,295.1 692.9,290.2 697.8,290.2 	"
+                />
+                <polygon
+                  class="st0"
+                  points="553.1,117.6 548.2,117.6 548.2,112.8 546.2,112.8 546.2,117.6 541.4,117.6 541.4,119.6 546.2,119.6 
+      546.2,124.5 548.2,124.5 548.2,119.6 553.1,119.6 	"
+                />
+
+                <linearGradient
+                  id="SVGID_13_"
+                  gradientUnits="userSpaceOnUse"
+                  x1="438.2179"
+                  y1="186.6447"
+                  x2="541.3151"
+                  y2="186.6447"
+                  gradientTransform="matrix(1 0 0 -1 -166.4 680.36)"
+                >
+                  <stop
+                    offset="0"
+                    style="stop-color: #808080; stop-opacity: 0.25"
+                  />
+                  <stop
+                    offset="0.54"
+                    style="stop-color: #808080; stop-opacity: 0.12"
+                  />
+                  <stop
+                    offset="1"
+                    style="stop-color: #808080; stop-opacity: 0.1"
+                  />
+                </linearGradient>
+                <path
+                  class="st17"
+                  d="M273.9,395.7c-3.5,11.4,1.8,24.8,12,30.8c4.3,2.5,9.2,3.8,13.4,6.5c9,5.9,12.6,17.2,15.6,27.6
+      c3.4,12,6.8,24.6,3.7,36.6c-2,7.7-6.5,14.4-9,21.9c-2.1,6.3-2.9,12.9-2.2,19.5c0.4,3.5,1.3,7.1,3.6,9.7c3.5,3.7,9,4.3,14,5.2
+      c21.5,4.1,39.7,18.2,49,38"
+                />
+                <path
+                  class="st18 ballonFallingRight2"
+                  d="M275,395.7c-3.5,11.4,1.8,24.8,12,30.8c4.3,2.5,9.2,3.8,13.4,6.5c9,5.9,12.6,17.2,15.6,27.6
+      c3.4,12,6.8,24.6,3.7,36.6c-2,7.7-6.5,14.4-9,21.9c-2.1,6.3-2.9,12.9-2.2,19.5c0.4,3.5,1.3,7.1,3.6,9.7c3.5,3.7,9,4.3,14,5.2
+      c21.5,4.1,39.7,18.2,49,38"
+                />
+
+                <linearGradient
+                  id="SVGID_14_"
+                  gradientUnits="userSpaceOnUse"
+                  x1="554.4595"
+                  y1="228.9026"
+                  x2="586.4227"
+                  y2="228.9026"
+                  gradientTransform="matrix(1 0 0 -1 -166.4 680.36)"
+                >
+                  <stop
+                    offset="0"
+                    style="stop-color: #808080; stop-opacity: 0.25"
+                  />
+                  <stop
+                    offset="0.54"
+                    style="stop-color: #808080; stop-opacity: 0.12"
+                  />
+                  <stop
+                    offset="1"
+                    style="stop-color: #808080; stop-opacity: 0.1"
+                  />
+                </linearGradient>
+                <path
+                  class="st19"
+                  d="M407.4,310.9c-8.6,12-17.6,25-18.3,39.8c-1.1,22.7,17,41.3,25.2,62.6c7.1,18.9,6.2,39.9-2.5,58.2
+      c-4,8.2-9.6,16.3-8.9,25.4c0.4,5.5,3.2,10.6,5.4,15.7c11.1,25.9,9.2,55.5-5.1,79.7"
+                />
+                <path
+                  class="st18 ballonFallingRight3"
+                  d="M408.5,310.9c-8.6,12-17.6,25-18.3,39.8c-1.1,22.7,17,41.3,25.2,62.6c7.1,18.9,6.2,39.9-2.5,58.2
+      c-4,8.2-9.6,16.3-8.9,25.4c0.4,5.5,3.2,10.6,5.4,15.7c11.1,25.9,9.2,55.5-5.1,79.7"
+                />
+
+                <linearGradient
+                  id="SVGID_15_"
+                  gradientUnits="userSpaceOnUse"
+                  x1="669.68"
+                  y1="171.3206"
+                  x2="700.571"
+                  y2="171.3206"
+                  gradientTransform="matrix(1 0 0 -1 -166.4 680.36)"
+                >
+                  <stop
+                    offset="0"
+                    style="stop-color: #808080; stop-opacity: 0.25"
+                  />
+                  <stop
+                    offset="0.54"
+                    style="stop-color: #808080; stop-opacity: 0.12"
+                  />
+                  <stop
+                    offset="1"
+                    style="stop-color: #808080; stop-opacity: 0.1"
+                  />
+                </linearGradient>
+                <path
+                  class="st20 ballonFallingRight1"
+                  d="M528.6,419.1l4.2,34c0.5,4.5,1,9.5-1.4,13.3c-2.3,3.7-6.6,5.4-10,8.1c-11,8.8-10,25.8-6.2,39.5
+      c3.8,13.6,9.3,28.3,4,41.4c-2.2,5.4-6,10-8.9,15c-4.9,8.7-6.8,18.7-5.5,28.6"
+                />
+                <path
+                  class="st18 ballonFallingRight1"
+                  d="M529.6,419.1l4.2,34c0.5,4.5,1,9.5-1.4,13.3c-2.3,3.7-6.6,5.4-10,8.1c-11,8.8-10,25.8-6.2,39.5
+      s9.3,28.3,4,41.4c-2.2,5.4-6,10-8.9,15c-4.9,8.7-6.8,18.7-5.5,28.6"
+                />
+                <g class="st21">
+                  <linearGradient
+                    id="SVGID_16_"
+                    gradientUnits="userSpaceOnUse"
+                    x1="571.06"
+                    y1="247.4099"
+                    x2="571.06"
+                    y2="614.9799"
+                    gradientTransform="matrix(1 0 0 -1 -166.4 680.36)"
+                  >
+                    <stop
+                      offset="0"
+                      style="stop-color: #808080; stop-opacity: 0.25"
+                    />
+                    <stop
+                      offset="0.54"
+                      style="stop-color: #808080; stop-opacity: 0.12"
+                    />
+                    <stop
+                      offset="1"
+                      style="stop-color: #808080; stop-opacity: 0.1"
+                    />
+                  </linearGradient>
+                  <path
+                    class="st22"
+                    d="M636.8,279.3c0-55.7-45.3-100.9-101-100.8c-10.6,0-21,1.7-31.1,4.9c0.8-5.7,1.3-11.4,1.3-17.1
+        c0.3-55.7-44.5-101.1-100.2-101.5c-53.4-0.3-97.7,41-101.2,94.2c-53-17.2-109.9,11.8-127.2,64.8c-3.3,10.1-4.9,20.6-4.9,31.1
+        c0,50.6,37.3,122.6,85.9,135.3l7.5,4.3l-4.1,14.1h24.3l-5.3-14.1l7.5-4.3c37.5-9.9,68.3-55,80.4-98.4c6.6,4.4,13.9,7.7,21.5,9.8
+        l7.5,4.3l-4.1,14.1H418l-5.3-14.1l7.5-4.3c5.6-1.5,11-3.7,16-6.5c6.5,48.6,41,108.1,84.7,119.5l7.6,4.3l-4.1,14.1h24.3l-5.3-14.1
+        l7.5-4.3C599.6,401.8,636.8,329.8,636.8,279.3z"
+                  />
+                </g>
+                <polygon
+                  class="st8 ballonFallingRight2"
+                  points="289.9,403.4 266.4,403.4 270.5,389.3 284.6,389.3 	"
+                />
+                <path
+                  class="st8"
+                  d="M375.2,254.7c0,53.9-43.7,132.8-97.6,132.8s-97.6-79-97.6-132.8c0-53.9,43.7-97.6,97.6-97.5
+      C331.5,157.2,375.1,200.8,375.2,254.7L375.2,254.7z"
+                />
+                <polygon
+                  class="st23"
+                  points="284.6,389.9 270.5,389.9 262.3,385.2 292.9,385.2 	"
+                />
+                <path class="st24" d="M242.3,178.9c0,0-41.1,22.3-47,67" />
+                <polygon
+                  class="st25 ballonFallingRight3"
+                  points="417.5,317.6 394,317.6 398.1,303.5 412.3,303.5 	"
+                />
+                <path
+                  class="st25 ballonFallingRight3"
+                  d="M502.8,168.9c0,53.9-43.7,132.9-97.6,132.9s-97.6-78.9-97.6-132.9c0-53.9,43.7-97.6,97.6-97.6
+      S502.8,115,502.8,168.9L502.8,168.9z"
+                />
+                <polygon
+                  class="st23"
+                  points="412.3,304.1 398.1,304.1 389.9,299.4 420.5,299.4 	"
+                />
+                <path class="st24" d="M369.9,93.1c0,0-41.1,22.3-47,67" />
+                <polygon
+                  class="st26 ballonFallingRight1"
+                  points="544.1,427 520.6,427 524.7,412.9 538.8,412.9 	"
+                />
+                <path
+                  class="st26 ballonFallingRight1"
+                  d="M629.3,278.3c0,53.9-43.7,132.8-97.6,132.8s-97.6-79-97.6-132.8c0-53.9,43.7-97.6,97.6-97.6
+      S629.3,224.4,629.3,278.3z"
+                />
+                <polygon
+                  class="st23"
+                  points="538.8,413.5 524.7,413.5 516.5,408.8 547,408.8 	"
+                />
+                <path class="st24" d="M496.5,202.4c0,0-41.2,22.3-47,67" />
+
+                <linearGradient
+                  id="SVGID_17_"
+                  gradientUnits="userSpaceOnUse"
+                  x1="-948.5931"
+                  y1="-52.8571"
+                  x2="-948.5931"
+                  y2="112.9929"
+                  gradientTransform="matrix(-1 5.000000e-02 -5.000000e-02 -1 -512.707 742.1325)"
+                >
+                  <stop
+                    offset="0"
+                    style="stop-color: #808080; stop-opacity: 0.25"
+                  />
+                  <stop
+                    offset="0.54"
+                    style="stop-color: #808080; stop-opacity: 0.12"
+                  />
+                  <stop
+                    offset="1"
+                    style="stop-color: #808080; stop-opacity: 0.1"
+                  />
+                </linearGradient>
+                <polygon
+                  class="st27 FalllingFromRight1"
+                  points="295.3,588.5 565.2,575 573.5,740.8 303.6,754.3 	"
+                />
+
+                <rect
+                  x="302.7"
+                  y="584.3"
+                  transform="matrix(0.9987 -5.111586e-02 5.111586e-02 0.9987 -33.255 23.0026)"
+                  class="st28 FalllingFromRight1"
+                  width="260.7"
+                  height="154.8"
+                />
+
+                <rect
+                  x="311.4"
+                  y="601.4"
+                  transform="matrix(0.9987 -5.111573e-02 5.111573e-02 0.9987 -30.9392 17.5666)"
+                  class="st2 FalllingFromRight1"
+                  width="33.2"
+                  height="24.5"
+                />
+
+                <rect
+                  x="341.4"
+                  y="661.9"
+                  transform="matrix(0.9987 -5.111573e-02 5.111573e-02 0.9987 -33.5063 21.5745)"
+                  class="st2 FalllingFromRight1"
+                  width="127.4"
+                  height="8"
+                />
+
+                <rect
+                  x="376.8"
+                  y="680.9"
+                  transform="matrix(0.9987 -5.111573e-02 5.111573e-02 0.9987 -34.3856 22.5261)"
+                  class="st2 FalllingFromRight1"
+                  width="92.9"
+                  height="5.3"
+                />
+              </g>
+            </svg>
+          </div>
+        </div>
+        <div class="content4-footer">
+          <h4>Created by DisanJaya</h4>
+          <p>Copyright © 2021 DisanJaya. All Rights Reserved</p>
+        </div>
+        <!-- cls-bgSvg5  -->
+        <div class="background5">
+          <svg
+            id="Layer_2"
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 1366 768"
+          >
+            <defs>
+              <style>
+                .cls-bgSvg5-1 {
+                  fill: url(#linear-gradient-bgSvg5);
+                }
+                .cls-bgSvg5-2 {
+                  fill: url(#linear-gradient-bgSvg5-2);
+                }
+              </style>
+              <linearGradient
+                id="linear-gradient-bgSvg5"
+                x1="-4314.31"
+                y1="-6097.06"
+                x2="-4085.39"
+                y2="-6097.06"
+                gradientTransform="matrix(0.02, 1.15, -1, 0.01, -5360.78, 5581.81)"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop offset="0" stop-color="#2d6599" />
+                <stop offset="0.03" stop-color="#2a6f9f" />
+                <stop offset="0.14" stop-color="#1f8fb2" />
+                <stop offset="0.26" stop-color="#17aac1" />
+                <stop offset="0.39" stop-color="#10becd" />
+                <stop offset="0.54" stop-color="#0ccdd6" />
+                <stop offset="0.71" stop-color="#09d5da" />
+                <stop offset="1" stop-color="#08d8dc" />
+              </linearGradient>
+              <linearGradient
+                id="linear-gradient-bgSvg5-2"
+                x1="-4235.16"
+                y1="-6091.02"
+                x2="-4082.95"
+                y2="-6091.02"
+                gradientTransform="matrix(0.02, 1.15, -1, 0.01, -5360.78, 5581.81)"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop offset="0" stop-color="#93f1ff" />
+                <stop offset="0.02" stop-color="#96f1ff" />
+                <stop offset="0.18" stop-color="#a1f1ff" />
+                <stop offset="0.4" stop-color="#a8f1ff" />
+                <stop offset="1" stop-color="#aaf1ff" />
+              </linearGradient>
+            </defs>
+            <path
+              class="cls-bgSvg5-1 bganimationUp1"
+              d="M20.38,786.6c24.45-41.59,64-92,125.15-111.25,85.58-27,128,33.84,222.5,28.44,152.69-8.72,177.32-175.31,300.24-171.92C781.33,535,799.17,677,943.23,688.62c78.12,6.32,101.55-33.12,182-23.38,90.07,10.89,156.92,71.92,199.11,121.36q-319.17,2.48-638.41,2.52Q353.14,789.18,20.38,786.6Z"
+            />
+            <path
+              class="cls-bgSvg5-2 bganimationUp2"
+              d="M127.84,787.23c6.78-14.21,19.64-36.45,43-54.36,74.38-57.09,157.22,5,284.44-17.07,122.12-21.16,115.81-90.5,216.8-92.91,104.48-2.5,107.78,71.79,242.09,85.33,91.21,9.19,140-20,213,17.06,37.22,18.9,62.2,45.6,77.74,65.74Z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- afterLoading-->
+  </body>
+  <!-- jquery -->
+  <script src="/js/jquery-3.6.0.js"></script>
+  <!-- gasp -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+  <!-- gasp-textPlugin -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/TextPlugin.min.js"></script>
+  <!-- my-script -->
+  <script src="/js/script.js"></script>
 </html>
