@@ -1,0 +1,16 @@
+/* animation */
+/* float */
+.float1 {
+    animation: float 8s infinite;
+}
+@keyframes float{
+    25% {
+        transform: translateY(25px);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

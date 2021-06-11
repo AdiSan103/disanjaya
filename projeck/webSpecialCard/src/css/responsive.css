@@ -1,0 +1,14 @@
+/* responsive */
+@media(max-width:800px) {
+    :root {
+        font-size: 30px;
+    }
+    .content {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .content-right {
+        width: 100%;
+        max-width: 400px;
+    }
+}
