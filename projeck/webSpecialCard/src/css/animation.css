@@ -3,6 +3,10 @@
 .float1 {
     animation: float 8s infinite;
 }
+
+.float2 {
+    animation: float 15s infinite;
+}
 @keyframes float{
     25% {
         transform: translateY(25px);
@@ -12,5 +16,51 @@
     }
     100% {
         transform: translateY(0);
+    }
+}
+
+.float3 {
+    animation: floatUp 10s infinite;
+}
+@keyframes floatUp{
+    25% {
+        transform: translateY(-25px);
+    }
+    50% {
+        transform: translateY(5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.zoom1 {
+    animation: zoom 20s infinite;
+}
+@keyframes zoom{
+    50% {
+        transform: scale(0.8);
+        opacity: 0.1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.fly1 {
+    animation: fly 10s infinite;
+}
+.fly2 {
+    animation: fly 20s infinite;
+}
+@keyframes fly {
+    0% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100%);
+        opacity: 0;
     }
 }

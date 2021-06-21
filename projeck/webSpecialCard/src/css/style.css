@@ -1,34 +1,93 @@
+/* css */
 body {
-  background: linear-gradient(to top right, #01002a, #26b5d5, #26efd5);
-  margin: 0;
-}
-
-:root {
-    font-size: 40px;
-}
-.content {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    min-height: 100vh;
-    justify-content:space-evenly;
-}
-
-.content-right {
-    width: 100%;
-    max-width: 500px;
-}
-
-.content-left h1 {
-    color: white;
+    font-family: quicksandregular;
+  }
+  :root {
+    font-size: 14px;
+  }
+  h1 {
+    margin-top: 40px;
+    text-align: center;
     font-size: 1.5rem;
-}
-
-.content-left h2 {
+  }
+  label {
+    color: rgb(5, 64, 119);
+  }
+  .container {
+    padding: 25px 0 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  .form label {
+    margin: 20px 0 5px 0;
+  }
+  .form input,
+  .form textarea {
+    border: rgb(147, 181, 255) 2px solid;
+    border-radius: 2px;
+    padding: 2px 5px;
+  }
+  button.submit,
+  button.copy {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    cursor: pointer;
+    background: linear-gradient(to right, #26b5d5, #26efd5);
+    padding: 10px;
+    width: 100px;
+    border-radius: 5px;
     color: white;
-    font-size:1.52rem;
-}
-
-.content-left p {
-    color: #f3ff7b;
-}
+    font-family: "montserratbold";
+    border: none;
+    transition: 0.25s;
+    box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  button.submit:hover,
+  button.copy:hover {
+    transform: scale(1.1);
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  button.submit:active,
+  button.copy:active {
+    transform: scale(0.9);
+  }
+  
+  button.copy.salin {
+    background-image: linear-gradient(to right, rgb(243, 118, 16), rgb(255, 213, 27));
+  }
+  
+  input.hidden {
+    opacity: 0;
+    position: absolute;
+    z-index: -999;
+  }
+  /* footer */
+  footer {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    background: linear-gradient(to right, #060452, #26b5d5, #26efd5);
+    height: 50px;
+  }
+  
+  footer a {
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+  footer a:hover {
+    color: rgb(94, 109, 245);
+  }

@@ -1,14 +1,55 @@
 /* responsive */
-@media(max-width:800px) {
+@media(max-width:1400px) {
     :root {
         font-size: 30px;
+    }
+}
+@media(max-width:1200px) {
+    :root {
+        font-size: 30px;
+    }
+    .content-right {
+        min-width: 350px;
+        z-index: 3;
+    }
+    .hat {
+        width: 150px;
+    }
+    .gift {
+        width: 180px;
+    }
+    .pita_orange {
+        width: 400px;
+    }
+}
+@media(max-width:800px) {
+    :root {
+        font-size: 25px;
     }
     .content {
         flex-direction: column-reverse;
         justify-content: center;
     }
+    .content-left  {
+        width: 100%;
+    }
     .content-right {
         width: 100%;
-        max-width: 400px;
+        max-width: 300px;
+        min-width: 260px;
+    }
+    .hat {
+        width: 150px;
+        left: -60px;
+    }
+    .gift {
+        width: 150px;
+        right: -60px;
+    }
+    .pita_yellow_pink {
+        right: 10px;
+    }
+    .ball_brown {
+        right: -100px;
     }
 }
