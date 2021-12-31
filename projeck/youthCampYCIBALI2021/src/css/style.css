@@ -1,0 +1,206 @@
+.color1 {
+    color: rgb(119, 97, 97);
+}
+.bg-1 {
+    background: rgba(255, 209, 245, 0.555);
+}
+.button-type-1 {
+    background: rgb(177, 152, 152);
+    width: 200px;
+    transition: 0.25s;
+}
+a.button-type-1:hover {
+    background: rgb(90, 71, 71);
+    border-radius: 20px;
+}
+/* laoding */
+body {
+    overflow-x: hidden;
+}
+.vh-100-2 {
+    min-height: 100vh;
+}
+
+/* .img-loading-desc {
+    max-width: 150px;
+} */
+.loadingIcon2 {
+    background: url('../img/18/DSCF8719.JPG');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    z-index: 9999;
+}
+.loadingIcon2.true {
+    transition: 1.25s;
+    transform: translateY(-100%);
+}
+.bg-loadingIcon2  {
+    background: rgba(37, 37, 36, 0.288)
+}
+.desc-text {
+    z-index: 999;
+}
+.buttonClick {
+    cursor: pointer;
+    transition: 0.25s;
+    background-color: rgb(54, 53, 53);
+    font-size: 25px;
+}
+.buttonClick:hover {
+    background-color: rgb(255, 255, 255);
+    color: black!important;
+}
+img.img-loading-top {
+    margin-top: -500px;
+}
+img.img-loading-top-2 {
+    margin-top: -600px;
+}
+
+button.buttonClick:focus {
+    transform: scale(0.95);
+}
+
+/* audio-control */
+.audio-control {
+    height: 50px;
+    width: 50px;
+    background: rgb(153, 131, 131);
+    right: 10px;
+    bottom: 10px;
+    position: absolute;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.25s;
+    border: none;
+}
+.audio-control:hover{
+    transform: scale(0.9);
+    background: rgb(170, 158, 169);
+}
+.audio-control svg {
+    font-size: 25px;
+    margin-left: 2px;
+    color: white;
+}
+
+/* banner */
+.banner  {
+    background: url('../img/18/DSCF8719.JPG');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.banner-container {
+    background: rgba(99, 99, 99, 0.267);
+}
+.banner h1,
+.banner .p-1 {
+    text-shadow: 1px 1px  rgba(0, 0, 0, 0.945);
+}
+.banner-bottom {
+    bottom: 0;
+}
+
+/* content1 */
+.content1-content {
+    max-width: 600px;
+}
+
+/* content2 */
+.content2 {
+    overflow-x: hidden;
+}
+.content2-main {
+    max-width: 600px;
+}
+.content2-1-border {
+    width: 700px;
+    height: 400px;
+    background: rgba(245, 98, 167, 0.329);
+    bottom: 50px;
+    z-index: -1;
+}
+
+.content2-2-border {
+    width: 600px;
+    height: 400px;
+    background: rgba(245, 98, 167, 0.329);
+    bottom: 50px;
+    left: -10px;
+    z-index: -1;
+}
+
+/* content3 */
+.content3 {
+    background: url('../img/19/DJI_0446.JPG');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 350px;
+    background-attachment: fixed;
+}
+.content-3-desc {
+    max-width: 600px;
+    background:   white;
+    border-radius: 20px;
+    box-shadow: 0 0 18px 9px  rgba(255, 157, 214, 0.123);
+}
+.border-content3-desc {
+    background: rgba(255, 188, 225, 0.295);
+    box-shadow: 0 0 18px 9px  rgba(255, 157, 214, 0.123);
+    width: 100%;
+    height: 300px;
+    z-index: -1;
+}
+.buttonMaps {
+    background: rgb(177, 152, 152);
+}
+/* gallery */
+.gallery  {
+    max-width: 800px;
+}
+.gallery-container {
+    background: rgba(255, 209, 245, 0.555);
+}
+.gallery-container h2 {
+    z-index: 9;
+}
+
+/* video */
+.video-container iframe {
+    min-width: 300px;
+}
+@media(min-width: 400px) {
+    .video-container iframe {
+        min-width: 400px;
+    }
+}
+@media(min-width: 700px) {
+    .video-container iframe {
+        min-width: 600px;
+    }
+}
+
+/* content5 */
+.content5 {
+    background: rgba(255, 209, 245, 0.555);
+}
+.content5-main-content {
+    max-width: 800px;
+}
+
+.content5-main-content  .col .icon-svg{
+    background: #d3146d94;
+    border-radius: 50%;
+    padding: 25px;
+}
+
+/* content6 */
+.content6 {
+    background: rgba(255, 209, 245, 0.555);
+}

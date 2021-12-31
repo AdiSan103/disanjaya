@@ -1,0 +1,59 @@
+.animate1 {
+    transition: 0.75s;
+}
+/* fade */
+.fade1 {
+    opacity: 0;
+}
+
+/* toUp */
+.toUp {
+    opacity: 0;
+    transform: translateY(100px);
+}
+/* toBottom */
+.toBottom {
+    opacity: 0;
+    transform: translateY(-100px);
+}
+
+/* toRight */
+.toRight {
+    opacity: 0;
+    transform: translateX(-100px);
+}
+
+/* toLeft */
+.toLeft {
+    opacity: 0;
+    transform: translateX(100px);
+}
+/* floating */
+.floating {
+    animation: floating 5s infinite;
+}
+.floating2 {
+    animation: floating 7s infinite;
+}
+ @keyframes floating {
+     50% {
+         transform: translateY(10px);
+     }
+ }
+
+ /* background-scale */
+/* .background-scale {
+    animation: background-scale 5s;
+} */
+
+@keyframes background-scale {
+    0% {
+        background-size: 200vh;
+    }
+    50% {
+        background-size: 210vh;
+    }
+    100% {
+        background-size: 200vh;
+    }
+}
