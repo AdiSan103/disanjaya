@@ -27,7 +27,7 @@ let content4 = document.getElementsByClassName('content4')[0];
 
 // 1
 setTimeout(function() {
-    t1.innerHTML = "14 Februari 2021";
+    t1.innerHTML = "14 Februari 2022";
     t1.classList.add('true');
     endLoad();
 }, 5200);
